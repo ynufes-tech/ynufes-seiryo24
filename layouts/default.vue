@@ -2,10 +2,21 @@
 
 </script>
 <template>
-    <NuxtLayout>
       <NuxtPage />
-    </NuxtLayout>
+      <div class="layout-root"></div>
 </template>
 <style scoped>
+
+.layout-root{
+    background-image: url(../assets/images/default-background-image.webp);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 100svh;
+  overflow: hidden;
+  z-index: -100;
+}
 
 </style>
