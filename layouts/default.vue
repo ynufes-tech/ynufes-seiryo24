@@ -1,14 +1,10 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 <template>
-      <NuxtPage />
-      <div class="layout-root"></div>
+  <div class="layout-root"></div>
 </template>
 <style scoped>
-
-.layout-root{
-    background-image: url(../assets/images/default-background-image.webp);
+.layout-root {
+  background-image: url(../assets/images/default-background-image.webp);
   position: absolute;
   top: 0;
   left: 0;
@@ -18,5 +14,4 @@
   overflow: hidden;
   z-index: -100;
 }
-
 </style>
