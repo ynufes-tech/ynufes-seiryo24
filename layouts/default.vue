@@ -1,6 +1,8 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="layout-root"></div>
+  <div class="layout-root">
+    <slot />
+  </div>
 </template>
 <style scoped>
 .layout-root {
