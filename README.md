@@ -1,75 +1,59 @@
-# Nuxt 3 Minimal Starter
+# フォーマットガイド
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+このリポジトリは、以下の記事を参考にprettier eslint を導入しました。
 
-## Setup
+https://dev.to/tao/adding-eslint-and-prettier-to-nuxt-3-2023-5bg
 
-Make sure to install the dependencies:
+# コーディングガイドライン
 
-```bash
-# npm
-npm install
+## サイトの breakpoint
 
-# pnpm
-pnpm install
+- sm(スマホサイズ) ~480px
+- md(ミドルサイズ) ~768px
+- lg(タブレットサイズ) ~1000px
+- xl(ラージサイズ) ~1200px
 
-# yarn
-yarn install
+1200px~をデフォルトとする。
 
-# bun
-bun install
-```
+## CSS カスタムプロパティ
 
-## Development Server
+できるだけマジックナンバーを減らしてデザインの共通化にに努めたい。
+異なるデザインでも同様の意図で同様の値を取る場合は、カスタムプロパティに登録することを検討されたし。
 
-Start the development server on `http://localhost:3000`:
+## Nuxt プロジェクトにお約束
 
-```bash
-# npm
-npm run dev
+文法や規則上守らないとエラーになるわけではないが、チーム内でのお約束があるので記載しています。
 
-# pnpm
-pnpm run dev
+### pages フォルダ
 
-# yarn
-yarn dev
+- パスはフォルダを分けて管理する
 
-# bun
-bun run dev
-```
+/about に該当する vue ファイルは、pages/about/index.vue に存在するべきである。
 
-## Production
+- クラス名は page-root に統一する
 
-Build the application for production:
+pages フォルダ内の vue ファイルは、template タグ直下のタグに page-root というクラス名を命名する。
 
-```bash
-# npm
-npm run build
+### components フォルダ
 
-# pnpm
-pnpm run build
+- ファイル名はアッパーキャメルケース
+- クラス名はケバブケース
 
-# yarn
-yarn build
+template タグ直下のタグにファイル名のケバブケースをクラス名にする。
 
-# bun
-bun run build
-```
+PrimaryCard.vue なら、クラス名は primary-card とする。
 
-Locally preview production build:
+- コンポーネントに margin を持たせない
 
-```bash
-# npm
-npm run preview
+### ブランチ管理
 
-# pnpm
-pnpm run preview
+- 開発はmainからbranchを切って行う
+- mainに直接pushはしない
+- 本番環境に関してはrelease-branchを使う
+- mainの状態を反映させるときにはmainからreleaseにPRを出す
 
-# yarn
-yarn preview
+### その他
 
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- inline css は使用しない
+- マジックナンバーを極力避ける
+- 単一ファイル内でもカスタムプロパティの定義をする
