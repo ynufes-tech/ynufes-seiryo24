@@ -1,11 +1,7 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-    <nuxt />
+  <div></div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
