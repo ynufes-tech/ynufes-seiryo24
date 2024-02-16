@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { hid: "description", name: "description", content: "" },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "23清陵祭 - 横浜国立大学大学祭" },
+        { property: "og:site_name", content: "24清陵祭 - 横浜国立大学大学祭" },
         {
           property: "keywords",
           content:
