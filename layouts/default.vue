@@ -1,6 +1,13 @@
 <script setup lang="ts"></script>
 <template>
   <div class="layout-root">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap"
+      rel="stylesheet"
+    />
+
     <slot />
     <FloatingButton />
   </div>
