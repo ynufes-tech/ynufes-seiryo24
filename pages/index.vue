@@ -49,12 +49,12 @@
 
 }
 .preannounce-info {
-  font-size: min(2.5em, 4vw);
+  font-size: min(2.5em, 5vw);
   box-sizing: border-box;
   /* padding: 0 1.5em; */
   margin: auto;
   margin-top: 3em;
-  width: min(60vw, 20em);
+  width: min(80vw, 20em);
   justify-content: center;
   flex-direction: column;
   text-align: center;
