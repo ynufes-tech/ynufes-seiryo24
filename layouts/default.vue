@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap"
       rel="stylesheet"
     />
+    
 
     <slot />
     <FloatingButton />
@@ -23,5 +24,9 @@
   min-height: 100svh;
   overflow: hidden;
   z-index: -100;
+  background-size: cover;
+  font-family: 'Zen Old Mincho', serif;
+  font-weight: regular;
+  color: #333333;
 }
 </style>
