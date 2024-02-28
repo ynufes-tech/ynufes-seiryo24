@@ -53,7 +53,7 @@
   box-sizing: border-box;
   /* padding: 0 1.5em; */
   margin: auto;
-  margin-top: 3em;
+  margin-top: max(3em,10vh);
   width: min(80vw, 20em);
   justify-content: center;
   flex-direction: column;
