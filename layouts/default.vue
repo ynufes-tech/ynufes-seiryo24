@@ -5,7 +5,7 @@
     <FloatingButton />
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
 .layout-root {
   background-image: url(../assets/images/default-background-image.webp);
   position: absolute;
@@ -17,5 +17,6 @@
   overflow: hidden;
   z-index: -100;
   background-size: cover;
+  font-family: "Zen Old Mincho", sans-serif;
 }
 </style>

@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       "@nuxtjs/google-fonts",
       {
         families: {
-          "Zen+Old+Mincho": true,
+          "Zen Old Mincho": true,
         },
         preconnect: true,
         crossorigin: true,

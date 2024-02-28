@@ -33,7 +33,6 @@
 .date {
   font-size: min(2.5em, 6vw);
   box-sizing: border-box;
-  /* padding-bottom: 2em; */
   margin: 0 auto;
   width: min(60vw, 20em);
   letter-spacing: 0.1em;
@@ -42,18 +41,16 @@
   text-align: center;
   line-height: 0.6em;
 }
-.Arrow1{
+.Arrow1 {
   width: 2.5em;
   padding: 0;
-  margin:0 0.5em 0.1em 0.3em;
-
+  margin: 0 0.5em 0.1em 0.3em;
 }
 .preannounce-info {
-  font-size: min(2.5em, 5vw);
+  font-size: min(3em, 5vw);
   box-sizing: border-box;
-  /* padding: 0 1.5em; */
   margin: auto;
-  margin-top: max(3em,10vh);
+  margin-top: max(3em, 10vh);
   width: min(80vw, 20em);
   justify-content: center;
   flex-direction: column;
