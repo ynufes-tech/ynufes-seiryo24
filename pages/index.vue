@@ -1,11 +1,21 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: "Top | 24清陵祭公式HP~花瑞希~",
+  meta: [
+    {
+      name: "description",
+      content: "5/18,19に開催される24清陵祭 公式HPです!! 最新情報を随時更新していきます!!",
+    },
+  ],
+});
+</script>
 
 <template>
   <div class="page-root">
     <h3 id="top-title">花瑞希</h3>
     <div class="date">
       <p>2024.05.18 Fri</p>
-      <p><img class="Arrow1" src="../assets/images/Arrow-1.webp" />05.19 Sat</p>
+      <p><img class="Arrow1" src="~assets/images/Arrow-1.webp" />05.19 Sat</p>
     </div>
     <div class="preannounce-info">
       <p>ページは随時更新していきます。</p>
