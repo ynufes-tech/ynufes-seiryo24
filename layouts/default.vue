@@ -18,5 +18,6 @@
   z-index: -100;
   background-size: cover;
   font-family: "Zen Old Mincho", sans-serif;
+  color: #333333;
 }
 </style>
