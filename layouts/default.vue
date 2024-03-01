@@ -2,6 +2,7 @@
 <template>
   <div class="layout-root">
     <slot />
+    <FloatingButton />
   </div>
 </template>
 <style scoped>
