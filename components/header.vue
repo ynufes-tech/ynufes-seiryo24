@@ -3,13 +3,9 @@
 
 <template>
 <div class="header">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" >
-<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
-
   <div class="ynu-icon-wrapper">
    <NuxtLink class="header-icon" to="/">
-      <img src="/public/images/YNUFES-icon.png">
+      <img src="/assets/images/YNUFES-icon.png">
       <div class="title">
         <a class="header-title">清陵祭</a>
         <a class="header-sub-title">2024</a>
@@ -21,7 +17,8 @@
 
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "assets/scss/_breakpoint.scss" as *;
 .header{
   display: flex;
 }
@@ -33,14 +30,15 @@
   left: 5%;
   .header-icon{
     display: flex;
+    text-decoration: none;
     >img{
       margin-right: 20px;
-      @media screen and (max-width: 768px){
+      @include md {
         width: 50px;
         height: 50px;
       }
 
-      @media screen and (max-width: 400px){
+      @include sm {
         width: 40px;
         height: 40px;
       }
@@ -57,24 +55,22 @@
     .header-title{
       font-size: 24px;
       margin: 0 auto;
-      text-decoration: none;
-      @media screen and (max-width: 768px){
+      @include md{
         font-size: 20px;
       }
 
-      @media screen and (max-width: 400px){
+      @include sm{
         font-size: 16px;
       }
     }
     .header-sub-title{
       font-size: 16px;
       margin: 0 auto;
-      text-decoration: none;
-      @media screen and (max-width: 768px){
+      @include md{
         font-size: 12px;
       }
 
-      @media screen and (max-width: 400px){
+      @include sm{
         font-size: 8px;
       }
     }
