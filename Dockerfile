@@ -1,6 +1,8 @@
 FROM node:20-slim as builder
 #nodeのイメージをベースにする
 
+ENV BASE_URL=/24/seiryo/
+
 WORKDIR /app
 #作業ディレクトリの指定
 
@@ -12,6 +14,8 @@ RUN yarn install
 RUN yarn build
 
 FROM node:20-slim as production
+
+ENV BASE_URL=/24/seiryo/
 
 WORKDIR /app
 
