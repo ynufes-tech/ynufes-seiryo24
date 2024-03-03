@@ -62,12 +62,13 @@
   }
   .page-icon {
     position: relative;
-    margin: 0 16px;
+    margin: 0 10px;
   }
   .page-icon:hover .hover-icon {
     display: inline;
   }
   .hover-icon {
+    color: #333333;
     position: absolute;
     display: none;
     padding: 2px;
