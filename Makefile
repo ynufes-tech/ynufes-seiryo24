@@ -4,7 +4,7 @@ GAR_LOCATION := asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/frontend-servi
 .PHONY: build
 
 build:
-	docker build -t $(DOCKER_TAG) .
+	docker build -t $(DOCKER_TAG) -f ./cloudrun/Dockerfile .
 	docker tag $(DOCKER_TAG):latest $(GAR_LOCATION)
 
 .PHONY: push
