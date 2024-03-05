@@ -19,7 +19,7 @@ const props = defineProps({
 </template>
 
 <style lang="scss" scoped>
-@use "assets/scss/_breakpoint.scss" as *;
+@use "@/assets/scss/_breakpoint.scss" as *;
 .page-title {
   font-family: "Zen Old Mincho", serif;
   margin: 0 auto;
