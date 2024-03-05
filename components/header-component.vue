@@ -5,7 +5,7 @@
 <div class="header">
   <div class="ynu-icon-wrapper">
    <NuxtLink class="header-icon" to="/">
-      <img src="/assets/images/YNUFES-icon.png">
+      <img src="~/assets/images/YNUFES-icon.png">
       <div class="title">
         <a class="header-title">清陵祭</a>
         <a class="header-sub-title">2024</a>
@@ -18,7 +18,7 @@
 </template>
 
 <style lang="scss" scoped>
-@use "assets/scss/_breakpoint.scss" as *;
+@use "@/assets/scss/_breakpoint.scss" as *;
 .header{
   display: flex;
 }
