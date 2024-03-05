@@ -1,6 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <div class="layout-root">
+    <header-component/>
     <slot />
     <FloatingButton />
   </div>
