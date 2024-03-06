@@ -21,4 +21,17 @@ export default defineNuxtConfig({
       ],
     },
   },
+  modules: [
+    [
+      "@nuxtjs/google-fonts",
+      {
+        families: {
+          "Zen Old Mincho": true,
+        },
+        preconnect: true,
+        crossorigin: true,
+        display: "swap",
+      },
+    ],
+  ],
 });
