@@ -31,37 +31,38 @@ useHead({
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: min(32vw, 70vh);
-  margin-top: 0;
-  font-size: min(12em, 18vw);
+  font-size: min(9em, 13.5vw);
   color: var(--thick-font-color);
   transform: translateX(-10%);
   font-weight: lighter;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.135em;
+  padding: 0;
   margin: 0;
+  margin-top: min(10rem, 20vw ); 
 }
 .date {
-  font-size: min(2.5em, 6vw);
+  font-size: min(2.25em, 4.5vw);
   box-sizing: border-box;
-  margin: 0 auto;
-  width: min(60vw, 20em);
-  letter-spacing: 0.1em;
+  margin: min(5rem ,5vw) auto 0;
+  width: min(45vw, 15em);
+  letter-spacing: 0.1125em;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  line-height: 0.6em;
+  line-height: 0.45em;
+  transform: translateX(10%);
 }
 .Arrow1 {
-  width: 2.5em;
+  width: 2.8em;
   padding: 0;
-  margin: 0 0.5em 0.1em 0.3em;
+  margin: 0 0.5em 0.1em 0.25em;
 }
 .preannounce-info {
-  font-size: min(3em, 5vw);
+  font-size: min(2.25em, 3.75vw);
   box-sizing: border-box;
   margin: auto;
-  margin-top: max(3em, 10vh);
-  width: min(80vw, 20em);
+  margin-top: max(2em, 10vh);
+  width: min(60vw, 15em);
   justify-content: center;
   flex-direction: column;
   text-align: center;
