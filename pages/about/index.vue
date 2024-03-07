@@ -4,6 +4,9 @@
   <div class="about-page">
     <div class="about-title"></div>
     <div class="inner-about-page">
+      <div class="page-title">
+        <PageTitle :title="'ABOUT'" :subTitle="'大学祭について'" />
+      </div>
       <div class="tokiwa-about">
         <h1 class="child-title">常盤祭とは</h1>
 
@@ -17,10 +20,8 @@
         <p>2日目：11月4日(土) 9時〜15時</p>
       </div>
       <div class="theme-about">
-        <h1 class="child-title">花瑞希</h1>
-        <p>
-          24清陵祭のテーマは「花瑞希」。
-        </p>
+        <h1 class="child-title">テーマについて</h1>
+        <p>24清陵祭のテーマは「花瑞希」。</p>
       </div>
       <div class="committee-about">
         <h1 class="child-title">大学祭実行委員会とは</h1>
@@ -47,12 +48,17 @@ html {
   scroll-behavior: smooth;
 }
 *p {
-    font-size: min(1.4em, 4vw);
-    margin: 0.5rem 1.3rem;
+  font-size: min(1.4em, 4vw);
+  margin: 0.5rem 1.3rem;
 }
 .inner-about-page {
   width: min(1024px, 100vw);
   margin: 0 auto;
+}
+.page-title {
+  /*  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; */
 }
 
 .child-title {

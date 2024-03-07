@@ -28,6 +28,7 @@ useHead({
 #top-title {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   width: 100%;
