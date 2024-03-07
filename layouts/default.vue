@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { onMounted } from "vue";
 
 onMounted(() => {
-  document.body.style.margin = '0';
-});</script>
+  document.body.style.margin = "0";
+});
+</script>
 <template>
   <div class="layout-root">
     <header-component />
