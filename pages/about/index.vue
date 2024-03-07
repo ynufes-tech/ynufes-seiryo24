@@ -9,7 +9,6 @@
       </div>
       <div class="tokiwa-about">
         <h1 class="child-title">常盤祭とは</h1>
-
         <p>
           常盤祭は横浜国立大学の年2回の大学祭のうち、秋に開催される大学祭です。
         </p>
@@ -55,10 +54,14 @@ html {
   width: min(1024px, 100vw);
   margin: 0 auto;
 }
+.about-page {
+  overflow: auto;
+}
 .page-title {
-  /*  display: flex;
-  flex-direction: column;
-  box-sizing: border-box; */
+  transform: translateY(-70%);
+}
+.tokiwa-about {
+  padding-top: max(12rem, 22vw);
 }
 
 .child-title {
