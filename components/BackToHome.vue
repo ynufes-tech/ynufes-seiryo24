@@ -2,7 +2,7 @@
 
 <template>
   <div class="back-to-home">
-    <NuxtLink to="/" class="button"> HOME </NuxtLink>
+    <NuxtLink to="/"> HOME </NuxtLink>
   </div>
 </template>
 
@@ -13,14 +13,14 @@
   margin: 0 auto;
   position: relative;
   bottom: 20%;
-}
-.button {
-  font-size: 24px;
-  font-family: "Zen Old Mincho", serif;
-  text-decoration: none;
-  padding: 0.3em 1.2em;
-  color: #333333;
-  background-color: rgba($color: #f6f6f6, $alpha: 0.8);
-  border-radius: 10px;
+  > a {
+    font-size: 24px;
+    font-family: "Zen Old Mincho", serif;
+    text-decoration: none;
+    padding: 0.3em 1.2em;
+    color: #333333;
+    background-color: rgba(#f6f6f6, 0.8);
+    border-radius: 10px;
+  }
 }
 </style>
