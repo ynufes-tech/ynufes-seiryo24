@@ -10,7 +10,7 @@ useHead({
     <div class="error">
       <HeaderComponent />
       <HeaderPageIcon />
-      <PageTitle title="ERROR" subTitle= "エラーコード：404" />
+      <PageTitle title="ERROR" sub-title="エラーコード：404" />
       <p class="main">お探しのページは見つかりませんでした</p>
       <BackToHome />
     </div>

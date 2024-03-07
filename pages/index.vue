@@ -4,7 +4,8 @@ useHead({
   meta: [
     {
       name: "description",
-      content: "5/18,19に開催される24清陵祭 公式HPです!! 最新情報を随時更新していきます!!",
+      content:
+        "5/18,19に開催される24清陵祭 公式HPです!! 最新情報を随時更新していきます!!",
     },
   ],
 });
@@ -28,6 +29,7 @@ useHead({
 #top-title {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -38,12 +40,12 @@ useHead({
   letter-spacing: 0.135em;
   padding: 0;
   margin: 0;
-  margin-top: min(10rem, 20vw ); 
+  margin-top: min(10rem, 20vw);
 }
 .date {
   font-size: min(2.25em, 4.5vw);
   box-sizing: border-box;
-  margin: min(5rem ,5vw) auto 0;
+  margin: min(5rem, 5vw) auto 0;
   width: min(45vw, 15em);
   letter-spacing: 0.1125em;
   justify-content: center;

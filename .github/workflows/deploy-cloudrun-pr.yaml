@@ -26,19 +26,19 @@ jobs:
         uses: google-github-actions/auth@v2
         with:
           token_format: access_token
-          workload_identity_provider: 'projects/292061085119/locations/global/workloadIdentityPools/github-pool/providers/provider-github'
-          service_account: 'gh-actions@ynufes-hp-cloudrun.iam.gserviceaccount.com'
+          workload_identity_provider: "projects/292061085119/locations/global/workloadIdentityPools/github-pool/providers/provider-github"
+          service_account: "gh-actions@ynufes-hp-cloudrun.iam.gserviceaccount.com"
 
       - name: Set up Cloud SDK
-        uses: 'google-github-actions/setup-gcloud@v2'
+        uses: "google-github-actions/setup-gcloud@v2"
         with:
-          version: '>= 363.0.0'
+          version: ">= 363.0.0"
 
       - name: Authorize Docker
         id: docker-auth
         uses: docker/login-action@v3
         with:
-          username: 'oauth2accesstoken'
+          username: "oauth2accesstoken"
           password: ${{ steps.auth.outputs.access_token }}
           registry: asia-northeast1-docker.pkg.dev
 
@@ -66,5 +66,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           URL: ${{ github.event.pull_request.html_url }}
-        run:
-          gh pr comment -b "Deployed on ${{ steps.deploy.outputs.url }}" ${{ github.event.number }}
+        run: gh pr comment -b "Deployed on ${{ steps.deploy.outputs.url }}" ${{ github.event.number }}
