@@ -43,7 +43,7 @@ jobs:
           push: true
           tags: asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/staging/seiryo24:latest
           context: .
-          file: ./Dockerfile
+          file: ./cloudrun/Dockerfile
 
       - name: Download Cloud Run Service YAML
         run: |
