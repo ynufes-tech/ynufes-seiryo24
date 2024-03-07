@@ -11,6 +11,7 @@ jobs:
     permissions:
       contents: read
       id-token: write
+      pull-requests: write
     steps:
       - name: Login to Google Cloud
         id: auth
@@ -42,5 +43,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh pr comment ${{ github.event.number }} -m "Failed to delete resources, CloudRun: ${{ steps.delete-cloudrun-service.outcome }}, Artifact Registry: ${{ steps.delete-artifact-registry.outcome }}"
+          gh pr comment  ${{ github.event.pull_request.html_url }} -b "Failed to delete resources, CloudRun: ${{ steps.delete-cloudrun-service.outcome }}, Artifact Registry: ${{ steps.delete-artifact-registry.outcome }}"
           exit 1
