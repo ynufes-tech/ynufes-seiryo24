@@ -1,13 +1,14 @@
 <script setup lang="ts"></script>
 <template>
   <div class="layout-root">
+    <header-component/>
     <slot />
     <FloatingButton />
   </div>
 </template>
 <style scoped lang="scss">
 .layout-root {
-  background-image: url(../assets/images/default-background-image.webp);
+  background-image: url(~/assets/images/default-background-image.webp);
   position: absolute;
   top: 0;
   left: 0;
