@@ -57,7 +57,7 @@
   align-items: center;
   font-family: "Zen Old Mincho", serif;
   color: #333333;
-  @include md{
+  @include md {
     display: none;
   }
   .page-icon {

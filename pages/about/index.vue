@@ -5,7 +5,7 @@
     <div class="about-title"></div>
     <div class="inner-about-page">
       <div class="page-title">
-        <PageTitle :title="'ABOUT'" :subTitle="'大学祭について'" />
+        <PageTitle :title="'ABOUT'" :sub-title="'大学祭について'" />
       </div>
       <div class="tokiwa-about">
         <h1 class="child-title">常盤祭とは</h1>
