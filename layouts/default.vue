@@ -8,6 +8,7 @@ onMounted(() => {
 <template>
   <div class="layout-root">
     <header-component />
+    <NaviMenu />
     <slot />
     <div class="background-container"></div>
     <FloatingButton />
@@ -20,6 +21,9 @@ onMounted(() => {
   position: relative;
   margin: 0;
   padding: 0;
+  .navigation-menu {
+      text-align: right;
+    }
 }
 .background-container {
   background-image: url(~/assets/images/default-background-image.webp);
