@@ -39,7 +39,7 @@
 .sns-area {
   width: 320px;
   height: 320px;
-  background-color:rgba(#f6f6f6, 0.6);
+  background-color: rgba(#f6f6f6, 0.6);
   border-radius: 50%;
   display: flex;
   flex-direction: column;

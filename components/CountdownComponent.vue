@@ -109,7 +109,7 @@ function updateCountdown(elements: {
   }
   .countdown-title {
     font-size: 35px;
-    @include md{
+    @include md {
       font-size: 20px;
     }
   }
@@ -117,7 +117,7 @@ function updateCountdown(elements: {
     font-size: 30px;
     padding: 25px 0;
     margin: 0;
-    @include md{
+    @include md {
       font-size: 18px;
       padding: 10px 0;
     }
@@ -126,7 +126,7 @@ function updateCountdown(elements: {
     font-size: 30px;
     text-align: center;
     position: relative;
-    @include md{
+    @include md {
       font-size: 18px;
     }
   }
@@ -137,7 +137,7 @@ function updateCountdown(elements: {
   position: relative;
   text-align: center;
   top: 10px;
-  @include md{
+  @include md {
     font-size: 9px;
     top: 6px;
   }
@@ -148,7 +148,7 @@ function updateCountdown(elements: {
   text-align: center;
   position: relative;
   top: 10px;
-  @include md{
+  @include md {
     font-size: 9px;
     top: 6px;
   }
@@ -161,7 +161,7 @@ function updateCountdown(elements: {
   position: relative;
   top: 50px;
   left: 260px;
-  @include md{
+  @include md {
     width: 180px;
     top: 70px;
     left: 185px;
@@ -185,7 +185,7 @@ function updateCountdown(elements: {
       align-items: center;
       justify-content: center;
       font-size: 16px;
-      @include md{
+      @include md {
         font-size: 10px;
       }
 
@@ -193,7 +193,7 @@ function updateCountdown(elements: {
         font-size: 24px;
         line-height: 1;
         margin: 15px 20px;
-        @include md{
+        @include md {
           font-size: 16px;
           margin: 9.5px 13px;
         }
