@@ -33,7 +33,7 @@
         >和田町駅からのルート</a
       >
       <p class="station-title">・三ツ沢上町駅からお越しの方</p>
-      <img src="~/assets/images/map/mitukami-station.png" class="station-map"/>
+      <img src="~/assets/images/map/mitukami-station.png" class="station-map" />
       <a
         href="https://www.ynu.ac.jp/access/train_front.html"
         class="ynu-page-link"
