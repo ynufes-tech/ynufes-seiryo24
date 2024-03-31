@@ -7,7 +7,7 @@
       <div class="page-title">
         <PageTitle :title="'ABOUT'" :sub-title="'大学祭について'" />
       </div>
-      <div class="tokiwa-about">
+      <div class="seiryo-about">
         <h1 class="child-title">常盤祭とは</h1>
         <p>
           常盤祭は横浜国立大学の年2回の大学祭のうち、春に開催される大学祭です。
@@ -61,7 +61,7 @@ html {
   transform: translateY(-70%);
   float: left;
 }
-.tokiwa-about {
+.seiryo-about {
   padding-top: max(12rem, 22vw);
 }
 
