@@ -21,8 +21,8 @@ onMounted(() => {
   margin: 0;
   padding: 0;
   .navigation-menu {
-      text-align: right;
-    }
+    text-align: right;
+  }
 }
 .background-container {
   background-image: url(~/assets/images/default-background-image.webp);

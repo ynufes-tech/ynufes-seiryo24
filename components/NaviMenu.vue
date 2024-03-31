@@ -10,10 +10,10 @@ const toggle = () => {
 <template>
   <div class="navigation-menu">
     <a
+      id="button-title"
       :class="{
         'under-hover-button': showMenu,
       }"
-      id="button-title"
       @click="toggle"
       >mmmm
     </a>
