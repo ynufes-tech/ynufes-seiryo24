@@ -15,8 +15,7 @@ const toggle = () => {
       }"
       id="button-title"
       @click="toggle"
-    >
-      MENU
+      >mmmm
     </a>
     <div v-show="showMenu">
       <nav class="nav-list-wrapper">
@@ -30,22 +29,23 @@ const toggle = () => {
           <li>
             <NuxtLink to="/events" @click="toggle">EVENTS</NuxtLink>
           </li>
-          
+
           <li>
             <NuxtLink to="/pamphlet" @click="toggle">MAP&PAMPHLET</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/time-schedule" @click="toggle">TIME-SCHDULE</NuxtLink
+            <NuxtLink to="/time-schedule" @click="toggle"
+              >TIME-SCHEDULE</NuxtLink
             >
+          </li>
+          <li>
+            <NuxtLink to="/access" @click="toggle">ACCESS</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/sponsors" @click="toggle">SPONSORS </NuxtLink>
           </li>
           <li>
             <NuxtLink to="/faq" @click="toggle">FAQ</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/access" @click="toggle">ACCESS</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -61,24 +61,19 @@ const toggle = () => {
 
 #button-title {
   display: inline-block;
-  width: 6rem;
-  text-align: center;
-  color: #ffffff;
-  line-height: 2.5rem;
-  background: #da8080;
-  outline: none;
-  border: 2px solid #da8080;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  width: fit-content;
+  line-height: 2.8rem;
+  background: url(~/assets/images/NaviMenu-OpenButton.webp) no-repeat;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border-radius: 10px;
-  font-weight: bold;
-  text-decoration: underline;
+  color: rgba(255, 255, 255, 0);
   cursor: pointer;
   user-select: none;
 
   &.under-hover-button {
-    color: #da8080;
-    background-color: #fcf9ef;
+    background: url(~/assets/images/NaviMenu-CloseButton.webp) no-repeat;
   }
 }
 
@@ -90,12 +85,12 @@ const toggle = () => {
   right: 0;
   margin-top: 1vw;
   display: inline-block;
-  width: 200px;
+  width: max(32vw, 10.5rem);
   padding: 1rem;
   text-align: left;
   list-style-type: none;
   text-decoration: none;
-  line-height: 50px;
+  line-height: 30px;
   outline: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -109,7 +104,7 @@ const toggle = () => {
   list-style: none;
   letter-spacing: 0.135em;
   padding: 0;
-  
+
   margin-left: 0;
 
   > li > a {
