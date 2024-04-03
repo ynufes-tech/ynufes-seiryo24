@@ -7,6 +7,7 @@
 </template>
 
 <style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
 .back-to-home {
   text-align: center;
   display: block;
@@ -21,6 +22,12 @@
     color: #333333;
     background-color: rgba(#f6f6f6, 0.8);
     border-radius: 10px;
+  }
+  @include md {
+    font-size: 18px;
+  }
+  @include sm {
+    font-size: 12px;
   }
 }
 </style>
