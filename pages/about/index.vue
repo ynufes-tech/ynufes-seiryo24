@@ -2,28 +2,25 @@
 
 <template>
   <div class="about-page">
-    <div class="about-title"></div>
+    <PageTitle :title="'ABOUT'" :sub-title="'大学祭について'" />
     <div class="inner-about-page">
-      <div class="page-title">
-        <PageTitle :title="'ABOUT'" :sub-title="'大学祭について'" />
-      </div>
       <div class="tokiwa-about">
-        <h1 class="child-title">常盤祭とは</h1>
+        <h1 class="child-title">・常盤祭とは</h1>
         <p>
           常盤祭は横浜国立大学の年2回の大学祭のうち、春に開催される大学祭です。
         </p>
         <p>ぜひお気軽に足を運んでみてください！</p>
 
-        <h1 class="child-title">開催日時</h1>
+        <h1 class="child-title">・開催日時</h1>
         <p>1日目：5月18日(金) 13時〜20時</p>
         <p>2日目：5月19日(土) 9時〜15時</p>
       </div>
       <div class="theme-about">
-        <h1 class="child-title">テーマについて</h1>
+        <h1 class="child-title">・テーマについて</h1>
         <p>24清陵祭のテーマは「花瑞希」。</p>
       </div>
       <div class="committee-about">
-        <h1 class="child-title">大学祭実行委員会とは</h1>
+        <h1 class="child-title">・大学祭実行委員会とは</h1>
         <p>
           年２回開催される横浜国立大学の大学祭を企画・運営しています。大学祭を楽しく安全に開催するために「年間を通して100人規模」で活動を行っています。
         </p>
@@ -38,51 +35,45 @@
         </p>
       </div>
     </div>
-    <div class="spacer"></div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-html {
-  scroll-behavior: smooth;
+@use "@/assets/scss/_breakpoint.scss" as *;
+// html {
+//   scroll-behavior: smooth;
+// }
+
+.inner-about-page {
+  position: relative;
+  top: 500px;
+  left: 20%;
+  width: 60%;
+  @include md {
+    top: 350px;
+  }
+  @include sm {
+    top: 250px;
+  }
+}
+.child-title {
+  font-size: 40px;
+  @include md {
+    font-size: 24px;
+  }
+  @include sm {
+    font-size: 16px;
+  }
 }
 *p {
-  font-size: min(1.4em, 4vw);
-  margin: 0.5rem 1.3rem;
-}
-.inner-about-page {
-  width: min(1024px, 100vw);
-  margin: 0 auto;
-}
-.about-page {
-  overflow: auto;
-}
-.page-title {
-  transform: translateY(-70%);
-  float: left;
-}
-.tokiwa-about {
-  padding-top: max(12rem, 22vw);
+  font-size: 32px;
+
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 12px;
+  }
 }
 
-.child-title {
-  color: #575f6a;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0.75em 0 0.75em 5%;
-}
-.dashed-line {
-  border: none;
-  width: 90%;
-  margin: 1.2rem auto;
-}
-.section-paragraph {
-  width: 90%;
-  margin: 1rem auto;
-}
-
-.spacer {
-  width: 100%;
-  height: 120px;
-}
 </style>
