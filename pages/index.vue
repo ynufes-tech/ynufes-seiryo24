@@ -18,9 +18,13 @@ useHead({
       <p>2024.05.18 Fri</p>
       <p><img class="Arrow1" src="~/assets/images/Arrow-1.webp" />05.19 Sat</p>
     </div>
-    <div class="preannounce-info">
-      <p>ページは随時更新していきます。</p>
-      <p>少々お待ちください。</p>
+    <div class="top-contents">
+      <div class="shapes-units">
+        <CountdownComponent/>
+        <HomeSNS/>
+        <SponsorBanner/>
+      </div>
+
     </div>
   </div>
 </template>
@@ -52,22 +56,12 @@ useHead({
   flex-direction: column;
   text-align: center;
   line-height: 0.45em;
-  transform: translateX(10%);
+  transform: translateX(20%);
 }
 .Arrow1 {
   width: 2.8em;
   padding: 0;
-  margin: 0 0.5em 0.1em 0.25em;
+  margin: 0 0.3em 0.1em 0.25em;
 }
-.preannounce-info {
-  font-size: min(2.25em, 3.75vw);
-  box-sizing: border-box;
-  margin: auto;
-  margin-top: max(2em, 10vh);
-  width: min(60vw, 15em);
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  line-height: 0.3em;
-}
+
 </style>
