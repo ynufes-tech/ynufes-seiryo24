@@ -8,7 +8,7 @@ const toggle = () => {
 </script>
 
 <template>
-  <div class="navigation-menu">
+  <div class="navi-menu">
     <a
       id="button-title"
       :class="{
@@ -31,7 +31,7 @@ const toggle = () => {
           </li>
 
           <li>
-            <NuxtLink to="/pamphlet" @click="toggle">MAP&PAMPHLET</NuxtLink>
+            <NuxtLink to="/pamphlet" @click="toggle">MAP&amp;PAMPHLET</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/time-schedule" @click="toggle"
@@ -54,7 +54,7 @@ const toggle = () => {
 </template>
 
 <style lang="scss" scoped>
-.navigation-menu {
+.navi-menu {
   position: relative;
   z-index: 10000;
 }
@@ -78,7 +78,7 @@ const toggle = () => {
 }
 
 .nav-list-wrapper {
-  background-image: url(~/assets/images/NaviMenuRectangle.webp);
+  background: linear-gradient(90deg, #ec9da8, #fddadf);
   background-size: cover;
   position: absolute;
   top: calc(100% + 0.5em);
@@ -97,7 +97,7 @@ const toggle = () => {
   border-radius: 5px;
   z-index: 10000;
   font-size: 1rem;
-  font-weight: regular;
+  font-weight: 400;
 }
 
 .nav-list {
