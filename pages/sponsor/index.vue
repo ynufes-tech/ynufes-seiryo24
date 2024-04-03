@@ -1,24 +1,26 @@
 <script lang="ts" setup></script>
 <template>
-  <div class="sponsors-title">
-    <PageTitle :title="'SPONSOR'" :sub-title="'協賛企業一覧'" />
-  </div>
-  <div class="inner-sponsors-page">
-    <div class="sponsors-about-contents">
-      <p class="text">
-        「24清陵祭」を開催するにあたり、多くの企業の皆様より多大なご協力を賜りました。この場をお借りいたしまして、心より感謝申し上げます。
-      </p>
-      <p class="text">
-        ご協賛いただきました企業を以下に掲載させていただきます。
-      </p>
+  <div class="page-root">
+    <div class="sponsors-title">
+      <PageTitle :title="'SPONSOR'" :sub-title="'協賛企業一覧'" />
     </div>
-    <div class="sponsors-list">
-      <div class="sponsor-group"><h1>・広告協賛</h1></div>
-      <div class="sponsor-group"><h1>・物品協賛</h1></div>
-      <div class="sponsor-group"><h1>・個人協賛</h1></div>
-      <div class="sponsor-group"><h1>・寄付</h1></div>
-      <div class="sponsor-group"><h1>・ミスコン協賛</h1></div>
-      <div class="sponsor-group"><h1>・その他のご協賛</h1></div>
+    <div class="inner-sponsors-page">
+      <div class="sponsors-about-contents">
+        <p class="text">
+          「24清陵祭」を開催するにあたり、多くの企業の皆様より多大なご協力を賜りました。この場をお借りいたしまして、心より感謝申し上げます。
+        </p>
+        <p class="text">
+          ご協賛いただきました企業を以下に掲載させていただきます。
+        </p>
+      </div>
+      <div class="sponsors-list">
+        <div class="sponsor-group"><h1>・広告協賛</h1></div>
+        <div class="sponsor-group"><h1>・物品協賛</h1></div>
+        <div class="sponsor-group"><h1>・個人協賛</h1></div>
+        <div class="sponsor-group"><h1>・寄付</h1></div>
+        <div class="sponsor-group"><h1>・ミスコン協賛</h1></div>
+        <div class="sponsor-group"><h1>・その他のご協賛</h1></div>
+      </div>
     </div>
   </div>
 </template>
