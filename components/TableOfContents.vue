@@ -8,6 +8,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  pageLink: {
+    type: String,
+    required: true,
+  },
 });
 </script>
 <template>
@@ -15,9 +19,12 @@ const props = defineProps({
     <h1>{{ props.title }}</h1>
     <h2>{{ props.subTitle }}</h2>
     <div class="view-more">
-      <a>View More <img class="Arrow2" src="~/assets/images/Arrow-2.webp" /></a>
+      <NuxtLink to="{{ props.pageLink }}" @click="toggle"
+        >View More <img class="Arrow2" src="~/assets/images/Arrow-2.webp"
+      /></NuxtLink>
+      
     </div>
   </div>
-  <hr />
+  <hr size="1px" color="#333333" />
 </template>
 <style lang="scss" scoped></style>

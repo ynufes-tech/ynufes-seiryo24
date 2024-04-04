@@ -24,14 +24,14 @@ useHead({
         <HomeSNS/>
         <SponsorBanner/>
       </div>
-      <TableOfContents :title="'ABOUT'" :sub-title="'大学祭について'" />
-      <TableOfContents :title="'EVENT'" :sub-title="'本部企画紹介'" />
-      <TableOfContents :title="'EVENTS'" :sub-title="'企画団体一覧'" />
-      <TableOfContents :title="'MAP&amp;PAMPHLET'" :sub-title="'大学祭内のマップ&amp;パンフレットの案内'" />
-      <TableOfContents :title="'TIME-SCHEDULE'" :sub-title="'企画タイムスケジュール'" />
-      <TableOfContents :title="'ACCESS'" :sub-title="'大学までのアクセス'" />
-      <TableOfContents :title="'SPONSORS'" :sub-title="'協賛企業一覧'" />
-      <TableOfContents :title="'FAQ'" :sub-title="'よくある質問'" />
+      <TableOfContents :title="'ABOUT'" :sub-title="'大学祭について'" :pageLink="'/about'" />
+      <TableOfContents :title="'EVENT'" :sub-title="'本部企画紹介'" :pageLink="'/events'" />
+      <TableOfContents :title="'EVENTS'" :sub-title="'企画団体一覧'" :pageLink="''" />
+      <TableOfContents :title="'MAP&amp;PAMPHLET'" :sub-title="'大学祭内のマップ&amp;パンフレットの案内'" :pageLink="'/pamphlet'" />
+      <TableOfContents :title="'TIME-SCHEDULE'" :sub-title="'企画タイムスケジュール'" :pageLink="'/time-schedule'" />
+      <TableOfContents :title="'ACCESS'" :sub-title="'大学までのアクセス'" :pageLink="'/access'" />
+      <TableOfContents :title="'SPONSORS'" :sub-title="'協賛企業一覧'" :pageLink="'/sponsors'" />
+      <TableOfContents :title="'FAQ'" :sub-title="'よくある質問'" :pageLink="'/faq'" />
 
     </div>
   </div>
