@@ -24,12 +24,29 @@ useHead({
         <HomeSNS/>
         <SponsorBanner/>
       </div>
+      <TableOfContents :title="'ABOUT'" :sub-title="'大学祭について'" />
+      <TableOfContents :title="'EVENT'" :sub-title="'本部企画紹介'" />
+      <TableOfContents :title="'EVENTS'" :sub-title="'企画団体一覧'" />
+      <TableOfContents :title="'MAP&amp;PAMPHLET'" :sub-title="'大学祭内のマップ&amp;パンフレットの案内'" />
+      <TableOfContents :title="'TIME-SCHEDULE'" :sub-title="'企画タイムスケジュール'" />
+      <TableOfContents :title="'ACCESS'" :sub-title="'大学までのアクセス'" />
+      <TableOfContents :title="'SPONSORS'" :sub-title="'協賛企業一覧'" />
+      <TableOfContents :title="'FAQ'" :sub-title="'よくある質問'" />
 
     </div>
   </div>
 </template>
 
 <style scoped>
+@import "@/assets/scss/_breakpoint.scss" ;
+.page-root{
+  @include md{
+    padding: 0 10vw;
+  }
+  @include sm{
+    padding:0 3vw;
+  }
+}
 #top-title {
   display: flex;
   flex-direction: column;
