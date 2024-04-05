@@ -74,27 +74,7 @@
   }
 }
 *p {
-<<<<<<< HEAD
-  font-size: min(1.4em, 4vw);
-  margin: 0.5rem 1.3rem;
-}
-.inner-about-page {
-  width: min(1024px, 100vw);
-  margin: 0 auto;
-}
-.about-page {
-  overflow: auto;
-}
-.page-title {
-  transform: translateY(-70%);
-  float: left;
-}
-.seiryo-about {
-  padding-top: max(12rem, 22vw);
-}
-=======
   font-size: 32px;
->>>>>>> main
 
   @include md {
     font-size: 20px;
