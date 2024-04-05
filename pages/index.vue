@@ -16,37 +16,68 @@ useHead({
     <h3 id="top-title">花瑞希</h3>
     <div class="date">
       <p>2024.05.18 Fri</p>
-      <p><img class="Arrow1" src="~/assets/images/Arrow-1.webp" />05.19 Sat</p>
+      <p><img class="arrow1" src="~/assets/images/Arrow-1.webp" />05.19 Sat</p>
     </div>
     <div class="top-contents">
       <div class="shapes-units">
-        <CountdownComponent/>
-        <HomeSNS/>
-        <SponsorBanner/>
+        <CountdownComponent />
+        <HomeSNS />
       </div>
-      <TableOfContents :title="'ABOUT'" :sub-title="'大学祭について'" :pageLink="'/about'" />
-      <TableOfContents :title="'EVENT'" :sub-title="'本部企画紹介'" :pageLink="'/events'" />
-      <TableOfContents :title="'EVENTS'" :sub-title="'企画団体一覧'" :pageLink="''" />
-      <TableOfContents :title="'MAP&amp;PAMPHLET'" :sub-title="'大学祭内のマップ&amp;パンフレットの案内'" :pageLink="'/pamphlet'" />
-      <TableOfContents :title="'TIME-SCHEDULE'" :sub-title="'企画タイムスケジュール'" :pageLink="'/time-schedule'" />
-      <TableOfContents :title="'ACCESS'" :sub-title="'大学までのアクセス'" :pageLink="'/access'" />
-      <TableOfContents :title="'SPONSORS'" :sub-title="'協賛企業一覧'" :pageLink="'/sponsors'" />
-      <TableOfContents :title="'FAQ'" :sub-title="'よくある質問'" :pageLink="'/faq'" />
-
+      <TableOfContents
+        :title="'ABOUT'"
+        :sub-title="'大学祭について'"
+        :page-link="'/about'"
+      />
+      <TableOfContents
+        :title="'EVENT'"
+        :sub-title="'本部企画紹介'"
+        :page-link="'/events'"
+      />
+      <TableOfContents
+        :title="'EVENTS'"
+        :sub-title="'企画団体一覧'"
+        :page-link="''"
+      />
+      <TableOfContents
+        :title="'MAP&amp;PAMPHLET'"
+        :sub-title="'大学祭内のマップ&amp;パンフレットの案内'"
+        :page-link="'/pamphlet'"
+      />
+      <TableOfContents
+        :title="'TIME-SCHEDULE'"
+        :sub-title="'企画タイムスケジュール'"
+        :page-link="'/time-schedule'"
+      />
+      <TableOfContents
+        :title="'ACCESS'"
+        :sub-title="'大学までのアクセス'"
+        :page-link="'/access'"
+      />
+      <TableOfContents
+        :title="'SPONSORS'"
+        :sub-title="'協賛企業一覧'"
+        :page-link="'/sponsors'"
+      />
+      <TableOfContents
+        :title="'FAQ'"
+        :sub-title="'よくある質問'"
+        :page-link="'/faq'"
+      />
     </div>
   </div>
 </template>
-
-<style scoped>
-@import "@/assets/scss/_breakpoint.scss" ;
-.page-root{
-  @include md{
-    padding: 0 10vw;
+<style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
+.page-root {
+  padding: 0 10rem;
+  @include md {
+    padding: 0 5vw;
   }
-  @include sm{
-    padding:0 3vw;
+  @include sm {
+    padding: 0 2vw;
   }
 }
+
 #top-title {
   display: flex;
   flex-direction: column;
@@ -75,10 +106,9 @@ useHead({
   line-height: 0.45em;
   transform: translateX(20%);
 }
-.Arrow1 {
+.arrow1 {
   width: 2.8em;
   padding: 0;
   margin: 0 0.3em 0.1em 0.25em;
 }
-
 </style>
