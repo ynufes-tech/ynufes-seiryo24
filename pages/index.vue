@@ -19,7 +19,7 @@ useHead({
       <p><img class="arrow1" src="~/assets/images/Arrow-1.webp" />05.19 Sat</p>
     </div>
     <div class="top-contents">
-      <div class="shapes-units">
+      <div class="circle-units">
         <CountdownComponent />
         <HomeSNS />
       </div>
@@ -110,5 +110,11 @@ useHead({
   width: 2.8em;
   padding: 0;
   margin: 0 0.3em 0.1em 0.25em;
+}
+.circle-units{
+  display: flex;
+}
+.top-contents{
+  margin-bottom: 10rem;
 }
 </style>

@@ -27,4 +27,9 @@ const props = defineProps({
   </div>
   <hr size="1px" color="#333333" />
 </template>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.view-more{
+  text-align: right;
+  text-decoration-line: none;
+}
+</style>
