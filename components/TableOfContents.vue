@@ -22,14 +22,48 @@ const props = defineProps({
       <NuxtLink to="{{ props.pageLink }}" @click="toggle"
         >View More <img class="Arrow2" src="~/assets/images/Arrow-2.webp"
       /></NuxtLink>
-      
     </div>
   </div>
   <hr size="1px" color="#333333" />
 </template>
 <style lang="scss" scoped>
-.view-more{
-  text-align: right;
-  text-decoration-line: none;
+.table-of-contents {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5rem;
 }
+*h1 {
+  font-size: 3rem;
+  letter-spacing: 0.135em;
+  transform: translateY(150%);
+}
+*h2 {
+  transform: translateY(130%);
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+}
+.view-more {
+  text-align: right;
+  margin-right: 3rem;
+transform: translateY(-60%);
+  > a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    
+  }
+}
+// .view-more a:hover{
+//   animation: zoom .3s;
+// }
+// @keyframes zoom {
+// 	50% {
+// 		transform: scale(1.05);
+// 	}
+// }
+// .view-more.letter-space:hover {
+//   letter-spacing: 0.15em;
+// }
+// ↑ホバー時に文字が浮き上がるようにしたかったが、うまく動かず
 </style>

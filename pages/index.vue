@@ -23,59 +23,62 @@ useHead({
         <CountdownComponent />
         <HomeSNS />
       </div>
-      <TableOfContents
-        :title="'ABOUT'"
-        :sub-title="'大学祭について'"
-        :page-link="'/about'"
-      />
-      <TableOfContents
-        :title="'EVENT'"
-        :sub-title="'本部企画紹介'"
-        :page-link="'/events'"
-      />
-      <TableOfContents
-        :title="'EVENTS'"
-        :sub-title="'企画団体一覧'"
-        :page-link="''"
-      />
-      <TableOfContents
-        :title="'MAP&amp;PAMPHLET'"
-        :sub-title="'大学祭内のマップ&amp;パンフレットの案内'"
-        :page-link="'/pamphlet'"
-      />
-      <TableOfContents
-        :title="'TIME-SCHEDULE'"
-        :sub-title="'企画タイムスケジュール'"
-        :page-link="'/time-schedule'"
-      />
-      <TableOfContents
-        :title="'ACCESS'"
-        :sub-title="'大学までのアクセス'"
-        :page-link="'/access'"
-      />
-      <TableOfContents
-        :title="'SPONSORS'"
-        :sub-title="'協賛企業一覧'"
-        :page-link="'/sponsors'"
-      />
-      <TableOfContents
-        :title="'FAQ'"
-        :sub-title="'よくある質問'"
-        :page-link="'/faq'"
-      />
+      <div class="table-units">
+        <TableOfContents
+          :title="'ABOUT'"
+          :sub-title="'大学祭について'"
+          :page-link="'/about'"
+        />
+        <TableOfContents
+          :title="'EVENT'"
+          :sub-title="'本部企画紹介'"
+          :page-link="'/events'"
+        />
+        <TableOfContents
+          :title="'EVENTS'"
+          :sub-title="'企画団体一覧'"
+          :page-link="''"
+        />
+        <TableOfContents
+          :title="'MAP&amp;PAMPHLET'"
+          :sub-title="'大学祭内のマップ&amp;パンフレットの案内'"
+          :page-link="'/pamphlet'"
+        />
+        <TableOfContents
+          :title="'TIME-SCHEDULE'"
+          :sub-title="'企画タイムスケジュール'"
+          :page-link="'/time-schedule'"
+        />
+        <TableOfContents
+          :title="'ACCESS'"
+          :sub-title="'大学までのアクセス'"
+          :page-link="'/access'"
+        />
+        <TableOfContents
+          :title="'SPONSORS'"
+          :sub-title="'協賛企業一覧'"
+          :page-link="'/sponsors'"
+        />
+        <TableOfContents
+          :title="'FAQ'"
+          :sub-title="'よくある質問'"
+          :page-link="'/faq'"
+        />
+      </div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
 .page-root {
-  padding: 0 10rem;
-  @include md {
-    padding: 0 5vw;
-  }
-  @include sm {
-    padding: 0 2vw;
-  }
+  box-sizing: border-box;
+  // padding: 0 15vw;
+  // @include md {
+  //   padding: 0 5vw;
+  // }
+  // @include sm {
+  //   padding: 0 2vw;
+  // }
 }
 
 #top-title {
@@ -111,10 +114,27 @@ useHead({
   padding: 0;
   margin: 0 0.3em 0.1em 0.25em;
 }
-.circle-units{
+.circle-units {
   display: flex;
+  height: 32rem;
+  // margin-left: 5vw;
+  margin-top: 4rem;
+  justify-content: center
+  
 }
-.top-contents{
+.countdown-wrapper {
+  transform: translateY(30%);
+  // transform: scale(80%);
+}
+.sns-area {
+  // transform: translateX(10%);
+  object-fit: cover;
+  margin-left: 5rem;
+}
+.top-contents {
   margin-bottom: 10rem;
+}
+.table-units{
+  margin: 0 15vw;
 }
 </style>
