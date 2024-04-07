@@ -9,7 +9,9 @@ onMounted(() => {
   <div class="layout-root">
     <header-component />
     <slot />
-    <div class="background-container"></div>
+    <div class="background-container">
+      <div class="background-img"></div>
+    </div>
     <FloatingButton />
   </div>
 </template>
@@ -18,13 +20,23 @@ onMounted(() => {
   font-family: "Zen Old Mincho", sans-serif;
   color: #333333;
   position: relative;
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
   .navi-menu {
     text-align: right;
+    width: 100vw;
+    height: 100vh;
   }
 }
 .background-container {
+  min-height: 100vh;
+  // overflow: hidden;
+
+  // width: 100vw;
+  // height: 100vh;
+  // position: relative;
+}
+.background-img {
   background-image: url(~/assets/images/default-background-image.webp);
   background-size: cover;
   top: 0;
@@ -33,8 +45,6 @@ onMounted(() => {
   right: 0;
   z-index: -100;
   position: absolute;
-  min-height: 100vh;
-  overflow: hidden;
   margin: 0;
 }
 </style>
