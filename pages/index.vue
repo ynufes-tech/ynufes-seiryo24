@@ -41,7 +41,7 @@ useHead({
         />
         <TableOfContents
           :title="'MAP&amp;PAMPHLET'"
-          :sub-title="'大学祭内のマップ&amp;パンフレットの案内'"
+          :sub-title="'大学祭のマップ&amp;パンフレット'"
           :page-link="'/pamphlet'"
         />
         <TableOfContents

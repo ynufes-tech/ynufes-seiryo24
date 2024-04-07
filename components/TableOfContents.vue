@@ -20,13 +20,14 @@ const props = defineProps({
     <h2>{{ props.subTitle }}</h2>
     <div class="view-more">
       <NuxtLink to="{{ props.pageLink }}" @click="toggle"
-        >View More <img class="Arrow2" src="~/assets/images/Arrow-2.webp"
+        >View More <img class="arrow2" src="~/assets/images/Arrow-2.webp"
       /></NuxtLink>
     </div>
   </div>
   <hr size="1px" color="#333333" />
 </template>
 <style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
 .table-of-contents {
   display: flex;
   flex-direction: column;
@@ -52,6 +53,12 @@ transform: translateY(-60%);
     font-size: 2rem;
     letter-spacing: 0.05em;
     
+  }
+  @include lg{
+    color: rgba(255, 255, 255, 0);
+    .arrow2{
+      width: 2.5rem;
+    }
   }
 }
 // .view-more a:hover{
