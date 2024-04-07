@@ -15,8 +15,8 @@ useHead({
   <div class="page-root">
     <h3 id="top-title">花瑞希</h3>
     <div class="date">
-      <p>2024.05.18 Fri</p>
-      <p><img class="arrow1" src="~/assets/images/Arrow-1.webp" />05.19 Sat</p>
+      <p>2024.05.18 Sat</p>
+      <p><img class="arrow1" src="~/assets/images/Arrow-1.webp" />05.19 Sun</p>
     </div>
     <div class="top-contents">
       <div class="circle-units">
@@ -116,25 +116,48 @@ useHead({
 }
 .circle-units {
   display: flex;
-  height: 32rem;
-  // margin-left: 5vw;
-  margin-top: 4rem;
-  justify-content: center
-  
+  // height: auto;
+  // margin-top: 4rem;
+  justify-content: center;
+  @include lg {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    // justify-content: center;
+    // margin: auto;
+  }
 }
 .countdown-wrapper {
   transform: translateY(30%);
   // transform: scale(80%);
+  @include lg {
+    // justify-content: center;
+    align-items: center;
+    // height: auto;
+    // box-sizing: border-box;
+    margin: auto;
+    transform: translateY(5%);
+  }
+  
 }
 .sns-area {
   // transform: translateX(10%);
   object-fit: cover;
   margin-left: 5rem;
+  @include lg{
+    // padding: 3rem;
+    margin: auto;
+    transform: translateX(-30%);
+    @include md{
+      transform: scale(0.8,0.8) translateX(-20%);
+      // transform: translateX(-30%);
+    }
+  }
 }
 .top-contents {
   margin-bottom: 10rem;
 }
-.table-units{
+.table-units {
   margin: 0 15vw;
 }
 </style>
