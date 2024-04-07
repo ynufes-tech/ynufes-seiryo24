@@ -35,7 +35,7 @@ const props = defineProps({
   @include md {
     line-height: 1.5rem;
   }
-  @include sm{
+  @include sm {
     line-height: 1rem;
   }
 }
@@ -46,7 +46,7 @@ const props = defineProps({
   @include md {
     font-size: 2rem;
   }
-  @include sm{
+  @include sm {
     font-size: 1.5rem;
   }
 }
@@ -57,7 +57,7 @@ const props = defineProps({
   @include md {
     font-size: 1.2rem;
   }
-  @include sm{
+  @include sm {
     font-size: 0.8rem;
   }
 }
@@ -76,20 +76,7 @@ const props = defineProps({
     .arrow2 {
       width: 2.5rem;
       transform: translateY(60%);
-      
     }
   }
 }
-// .view-more a:hover{
-//   animation: zoom .3s;
-// }
-// @keyframes zoom {
-// 	50% {
-// 		transform: scale(1.05);
-// 	}
-// }
-// .view-more.letter-space:hover {
-//   letter-spacing: 0.15em;
-// }
-// ↑ホバー時に文字が浮き上がるようにしたかったが、うまく動かず
 </style>

@@ -70,16 +70,6 @@ useHead({
 </template>
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
-.page-root {
-  box-sizing: border-box;
-  // padding: 0 15vw;
-  // @include md {
-  //   padding: 0 5vw;
-  // }
-  // @include sm {
-  //   padding: 0 2vw;
-  // }
-}
 
 #top-title {
   display: flex;
@@ -116,7 +106,6 @@ useHead({
 }
 .circle-units {
   display: flex;
-  // height: auto;
   margin-top: 4rem;
   margin-bottom: 4rem;
   justify-content: center;
@@ -124,35 +113,25 @@ useHead({
     display: flex;
     flex-direction: column;
     height: auto;
-    // justify-content: center;
-    // margin: auto;
   }
 }
 .countdown-wrapper {
   transform: translateY(30%);
-  // transform: scale(80%);
   @include lg {
-    // justify-content: center;
     align-items: center;
-    // height: auto;
-    // box-sizing: border-box;
     margin: auto;
     margin-bottom: 0;
     transform: translateY(5%);
   }
-  
 }
 .sns-area {
-  // transform: translateX(10%);
   object-fit: cover;
   margin-left: 5rem;
-  @include lg{
-    // padding: 3rem;
+  @include lg {
     margin: auto;
     transform: translateX(-30%);
-    @include md{
-      transform: scale(0.8,0.8) translateX(-20%);
-      // transform: translateX(-30%);
+    @include md {
+      transform: scale(0.8, 0.8) translateX(-20%);
     }
   }
 }
