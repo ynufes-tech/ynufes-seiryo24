@@ -117,7 +117,8 @@ useHead({
 .circle-units {
   display: flex;
   // height: auto;
-  // margin-top: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   justify-content: center;
   @include lg {
     display: flex;
@@ -136,6 +137,7 @@ useHead({
     // height: auto;
     // box-sizing: border-box;
     margin: auto;
+    margin-bottom: 0;
     transform: translateY(5%);
   }
   

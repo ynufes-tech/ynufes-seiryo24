@@ -19,7 +19,7 @@ const props = defineProps({
     <h1>{{ props.title }}</h1>
     <h2>{{ props.subTitle }}</h2>
     <div class="view-more">
-      <NuxtLink to="{{ props.pageLink }}" @click="toggle"
+      <NuxtLink :to="props.pageLink" @click="toggle"
         >View More <img class="arrow2" src="~/assets/images/Arrow-2.webp"
       /></NuxtLink>
     </div>
@@ -32,32 +32,51 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   line-height: 2.5rem;
+  @include md {
+    line-height: 1.5rem;
+  }
+  @include sm{
+    line-height: 1rem;
+  }
 }
 *h1 {
   font-size: 3rem;
   letter-spacing: 0.135em;
   transform: translateY(150%);
+  @include md {
+    font-size: 2rem;
+  }
+  @include sm{
+    font-size: 1.5rem;
+  }
 }
 *h2 {
   transform: translateY(130%);
   font-size: 1.6rem;
   letter-spacing: 0.06em;
+  @include md {
+    font-size: 1.2rem;
+  }
+  @include sm{
+    font-size: 0.8rem;
+  }
 }
 .view-more {
   text-align: right;
   margin-right: 3rem;
-transform: translateY(-60%);
+  transform: translateY(-60%);
   > a {
     text-decoration: none;
     color: inherit;
     font-size: 2rem;
     letter-spacing: 0.05em;
-    
   }
-  @include lg{
+  @include lg {
     color: rgba(255, 255, 255, 0);
-    .arrow2{
+    .arrow2 {
       width: 2.5rem;
+      transform: translateY(60%);
+      
     }
   }
 }
