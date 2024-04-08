@@ -4,16 +4,16 @@
     <div class="about-page">
       <PageTitle :title="'ABOUT'" :sub-title="'大学祭について'" />
       <div class="inner-about-page">
-        <div class="tokiwa-about">
-          <h1 class="child-title">・常盤祭とは</h1>
+        <div class="seiryo-about">
+          <h1 class="child-title">・清陵祭とは</h1>
           <p>
-            常盤祭は横浜国立大学の年2回の大学祭のうち、春に開催される大学祭です。
+            清陵祭は横浜国立大学の年2回の大学祭のうち、春に開催される大学祭です。
           </p>
           <p>ぜひお気軽に足を運んでみてください！</p>
 
           <h1 class="child-title">・開催日時</h1>
-          <p>1日目：5月18日(金) 13時〜20時</p>
-          <p>2日目：5月19日(土) 9時〜15時</p>
+          <p>1日目：5月18日(土) 13時〜20時</p>
+          <p>2日目：5月19日(日) 9時〜15時</p>
         </div>
         <div class="theme-about">
           <h1 class="child-title">・テーマについて</h1>
