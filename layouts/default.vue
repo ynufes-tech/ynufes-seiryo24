@@ -9,9 +9,11 @@ onMounted(() => {
   <div class="layout-root">
     <header-component />
     <slot />
-    <div class="background-container">
-      <div class="background-img"></div>
-    </div>
+    <img
+      id="background-img"
+      alt=""
+      src="~/assets/images/default-background-image.webp"
+    />
     <FloatingButton />
   </div>
 </template>
@@ -22,27 +24,21 @@ onMounted(() => {
   position: relative;
   margin: 0;
   padding: 0;
+  top: 0;
+  left: 0;
+
   .navi-menu {
     text-align: right;
   }
 }
-.background-container {
-  min-height: 100vh;
-  overflow: hidden;
 
+#background-img {
+  object-fit: cover;
   width: 100vw;
   height: 100vh;
-  // position: relative;
-}
-.background-img {
-  background-image: url(~/assets/images/default-background-image.webp);
-  background-size: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   z-index: -100;
-  position: absolute;
+  top: 0;
+  position: fixed;
   overflow: hidden;
   margin: 0;
 }
