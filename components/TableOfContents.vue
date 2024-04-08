@@ -16,13 +16,12 @@ const props = defineProps({
 </script>
 <template>
   <div class="table-of-contents">
-    <h1>{{ props.title }}</h1>
-    <h2>{{ props.subTitle }}</h2>
-    <div class="view-more">
-      <NuxtLink :to="props.pageLink" @click="toggle"
-        >View More <img class="arrow2" src="~/assets/images/Arrow-2.webp"
-      /></NuxtLink>
-    </div>
+    <NuxtLink :to="props.pageLink" @click="toggle"
+      ><h1>{{ props.title }}</h1>
+      <h2>{{ props.subTitle }}</h2>
+      <div class="view-more">
+        View More <img class="arrow2" src="~/assets/images/Arrow-2.webp" /></div
+    ></NuxtLink>
   </div>
   <hr size="1px" color="#333333" />
 </template>
@@ -32,6 +31,10 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   line-height: 2.5rem;
+  > a {
+    text-decoration: none;
+    color: inherit;
+  }
   @include md {
     line-height: 1.5rem;
   }
@@ -65,12 +68,8 @@ const props = defineProps({
   text-align: right;
   margin-right: 3rem;
   transform: translateY(-60%);
-  > a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 2rem;
-    letter-spacing: 0.05em;
-  }
+  font-size: 2rem;
+  letter-spacing: 0.05em;
   @include lg {
     color: rgba(255, 255, 255, 0);
     .arrow2 {
