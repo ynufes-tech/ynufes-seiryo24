@@ -135,9 +135,6 @@ useHead({
     }
   }
 }
-.top-contents {
-  margin-bottom: 10rem;
-}
 .table-units {
   margin: 0 15vw;
 }
