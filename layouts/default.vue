@@ -1,10 +1,4 @@
-<script setup lang="ts">
-import { onMounted } from "vue";
-
-onMounted(() => {
-  document.body.style.margin = "0";
-});
-</script>
+<script setup lang="ts"></script>
 <template>
   <div class="layout-root">
     <header-component />
@@ -41,5 +35,12 @@ onMounted(() => {
   position: fixed;
   overflow: hidden;
   margin: 0;
+}
+</style>
+
+<style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
 }
 </style>
