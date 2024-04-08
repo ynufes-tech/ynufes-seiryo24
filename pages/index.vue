@@ -32,12 +32,12 @@ useHead({
         <TableOfContents
           :title="'EVENT'"
           :sub-title="'本部企画紹介'"
-          :page-link="'/events'"
+          :page-link="'/event'"
         />
         <TableOfContents
           :title="'EVENTS'"
           :sub-title="'企画団体一覧'"
-          :page-link="''"
+          :page-link="'/events'"
         />
         <TableOfContents
           :title="'MAP&amp;PAMPHLET'"
