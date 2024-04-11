@@ -11,10 +11,10 @@ const props = defineProps<{
 }>();
 const showNoImage = function (e: any) {
   e.target.src =
-    "https://storage.googleapis.com/tokiwa24-assets/icons/no-image";
+    "";
   e.target.onerror = null;
 };
-const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icons/${props.eventData.id}`;
+const iconURL = ``;
 </script>
 
 <template>
@@ -44,28 +44,72 @@ const iconURL = `https://storage.googleapis.com/tokiwa24-assets/icons/${props.ev
 
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
-.project-icon {
-  width: 250px;
-  height: 180px;
+
+.project-card {
+  position: absolute;
+  background-color: rgba(#f6f6f6, 0.5);
+  width: 25svw;
+  min-width: 300px;
+  max-width: 400px;
+  height: 35svh;
+  min-height: 275px;
+  max-height: 300px;
+  border: 2px solid #f6f6f6;
+  @include md{
+    min-width: 180px;
+    max-width: 300px;
+    max-height: 256px;
+    min-height: 160px;
+  }
+
+
+}
+
+.card-photo {
+  width: 150px;
+  height: 120px;
   object-fit: cover;
   position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-100%) translateX(85%);
   border-radius: 20px;
+  @include md{
+    width: 90px;
+    height: 75px;
+  }
 }
 .card-script {
-  position: relative;
-  width: 250px;
-  height: 200px;
-  text-align: center;
+  position: absolute;
+  width: 160px;
+  height: 120px;
+  padding: 10px 15px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-25%) translateX(-75%);
   background-color: rgba(#f6f6f6, 0.8);
+  @include md{
+    width: 90px;
+    height: 75px;
+    padding: 2px 4px;
+  }
 
-  p {
-    font-size: 20px;
-    margin: 12px 0;
+  > p {
+    font-size: 16px;
+    margin: 4px 0;
+    @include md {
+      font-size: 10px;
+      margin: 1px 0;
+    }
   }
 
   .event-name {
-    font-size: 24px;
-    border-bottom: #333;
+    width: fit-content;
+    font-size: 20px;
+    border-bottom: 0.6px solid #333;
+    @include md{
+      font-size: 12px;
+    }
   }
 }
 </style>
