@@ -322,10 +322,10 @@ gtag("event", "screen_view", {
 
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
-.place-title{
+.place-title {
   font-size: 24px;
 }
-.select-button-description{
+.select-button-description {
   font-size: 20px;
   position: relative;
   left: 20%;
@@ -351,7 +351,7 @@ gtag("event", "screen_view", {
     border-radius: 16px;
   }
 }
-.time-table-wrapper{
+.time-table-wrapper {
   position: relative;
   left: 20%;
   width: min(1024px, 65vw);
@@ -458,6 +458,4 @@ gtag("event", "screen_view", {
 .back-to-home {
   margin: 40px auto;
 }
-
-
 </style>
