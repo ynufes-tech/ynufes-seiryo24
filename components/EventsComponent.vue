@@ -10,8 +10,7 @@ const props = defineProps<{
   };
 }>();
 const showNoImage = function (e: any) {
-  e.target.src =
-    "";
+  e.target.src = "";
   e.target.onerror = null;
 };
 const iconURL = ``;
@@ -55,14 +54,12 @@ const iconURL = ``;
   min-height: 275px;
   max-height: 300px;
   border: 2px solid #f6f6f6;
-  @include md{
+  @include md {
     min-width: 180px;
     max-width: 300px;
     max-height: 256px;
     min-height: 160px;
   }
-
-
 }
 
 .card-photo {
@@ -74,7 +71,7 @@ const iconURL = ``;
   right: 50%;
   transform: translateY(-100%) translateX(85%);
   border-radius: 20px;
-  @include md{
+  @include md {
     width: 90px;
     height: 75px;
   }
@@ -88,7 +85,7 @@ const iconURL = ``;
   left: 50%;
   transform: translateY(-25%) translateX(-75%);
   background-color: rgba(#f6f6f6, 0.8);
-  @include md{
+  @include md {
     width: 90px;
     height: 75px;
     padding: 2px 4px;
@@ -107,7 +104,7 @@ const iconURL = ``;
     width: fit-content;
     font-size: 20px;
     border-bottom: 0.6px solid #333;
-    @include md{
+    @include md {
       font-size: 12px;
     }
   }
