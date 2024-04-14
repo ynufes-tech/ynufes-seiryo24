@@ -87,7 +87,7 @@ gtag("event", "screen_view", {
     <div class="time-table-wrapper">
       <!-- 1. 野外音楽堂 -->
       <div v-show="placeId == 1" class="time-table">
-        <hi class="place-title">野外音楽堂</hi>
+        <h1 class="place-title">野外音楽堂</h1>
         <h2 class="day-1">5/18 Sat.</h2>
 
         <div class="duration-box"></div>
@@ -122,7 +122,7 @@ gtag("event", "screen_view", {
 
       <!-- 2. 中央図書館1階メディアホール -->
       <div v-show="placeId == 2" class="time-table">
-        <hi class="place-title">中央図書館1階メディアホール</hi>
+        <h1 class="place-title">中央図書館1階メディアホール</h1>
         <h2 class="day-1">5/18 Sat.</h2>
 
         <div class="duration-box"></div>
@@ -145,7 +145,7 @@ gtag("event", "screen_view", {
 
       <!-- 3. 経営学部2号館109教室 -->
       <div v-show="placeId == 3" class="time-table">
-        <hi class="place-title">経営学部2号館109教室</hi>
+        <h1 class="place-title">経営学部2号館109教室</h1>
         <h2 class="day-1">5/18 Sat.</h2>
         <div class="duration-box"></div>
         <div class="time-table-item">
@@ -177,7 +177,7 @@ gtag("event", "screen_view", {
 
       <!-- 4. 教育6号館と7号館の間 -->
       <div v-show="placeId == 4" class="time-table">
-        <hi class="place-title">教育6号館と7号館の間</hi>
+        <h1 class="place-title">教育6号館と7号館の間</h1>
         <h2 class="day-1">5/18 Sat.</h2>
 
         <div class="duration-box"></div>
@@ -232,7 +232,7 @@ gtag("event", "screen_view", {
 
       <!-- 5. 学生センター前のウッドデッキ -->
       <div v-show="placeId == 5" class="time-table">
-        <hi class="place-title">学生センター前ウッドデッキ</hi>
+        <h1 class="place-title">学生センター前ウッドデッキ</h1>
         <h2 class="day-1">5/18 Sat.</h2>
         <div class="duration-box"></div>
         <h2 class="day-2">5/19 Sun.</h2>
@@ -254,7 +254,7 @@ gtag("event", "screen_view", {
 
       <!-- 6. 多目的グラウンド -->
       <div v-show="placeId == 6" class="time-table">
-        <hi class="place-title">多目的グラウンド</hi>
+        <h1 class="place-title">多目的グラウンド</h1>
         <h2 class="day-1">5/18 Sat.</h2>
 
         <div class="duration-box"></div>
@@ -289,7 +289,7 @@ gtag("event", "screen_view", {
 
       <!-- 7. 大学会館4階ホール -->
       <div v-show="placeId == 7" class="time-table">
-        <hi class="place-title">大学会館4階 ホール</hi>
+        <h1 class="place-title">大学会館4階 ホール</h1>
         <h2 class="day-1">5/18 Sat.</h2>
         <div class="duration-box"></div>
         <div class="time-table-item">
