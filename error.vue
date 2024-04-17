@@ -23,16 +23,17 @@ useHead({
 @use "@/assets/scss/_breakpoint.scss" as *;
 .inner-error-page {
   position: relative;
-  top: 200px;
+  top: 500px;
+  left: 20%;
+  width: 60%;
   @include md {
-    top: 180px;
+    top: 350px;
   }
   @include sm {
-    top: 120px;
+    top: 250px;
   }
 }
 .main {
-  width: 70%;
   font-size: 32px;
   color: #333333;
   text-align: center;
