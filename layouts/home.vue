@@ -27,11 +27,11 @@ onMounted(() => {
   }
 }
 .background-container {
-//   min-height: 100vh;
+  //   min-height: 100vh;
   overflow: hidden;
 
   width: 100vw;
-//   height: 100vh;
+  //   height: 100vh;
   // position: relative;
 }
 .background-img {
