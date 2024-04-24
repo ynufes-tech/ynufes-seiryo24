@@ -2,13 +2,12 @@
 <template>
   <div class="page-root">
     <div class="staff-page">
-      <PageTitle :title="'STAFF'" :sub-title="'大学祭に関するお問い合わせ'" />
+      <PageTitle :title="'STAFF'" :sub-title="'お問い合わせ'" />
       <div class="inner-staff-page">
         <div class="staff-about">
           <p>当ホームページに興味を持っていただきありがとうございます。</p>
           <p>お問い合わせに関しましては、メールにてお願いします。</p>
         </div>
-
         <div class="mail-announce">
           <h1 class="child-title">メールでのお問い合わせ</h1>
           <p>メールアドレス：24seiryo.soumu@gmail.com</p>
@@ -24,9 +23,6 @@
 
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
-// html {
-//   scroll-behavior: smooth;
-// }
 
 .inner-staff-page {
   position: relative;
