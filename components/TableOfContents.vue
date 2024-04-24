@@ -82,5 +82,4 @@ const props = defineProps({
     transition: 0.3s;
   }
 }
-
 </style>
