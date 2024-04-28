@@ -20,6 +20,9 @@
   padding: 0;
   top: 0;
   left: 0;
+  .navi-menu {
+    text-align: right;
+  }
 }
 
 #background-img {
