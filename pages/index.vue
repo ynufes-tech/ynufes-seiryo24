@@ -1,4 +1,7 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: "home",
+});
 useHead({
   title: "Top | 24清陵祭公式HP~花瑞希~",
   meta: [
