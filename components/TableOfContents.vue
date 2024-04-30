@@ -77,5 +77,9 @@ const props = defineProps({
       transform: translateY(60%);
     }
   }
+  &:hover {
+    translate: 10px;
+    transition: 0.3s;
+  }
 }
 </style>
