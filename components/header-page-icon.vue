@@ -35,10 +35,6 @@
         <img src="~/assets/images/pageIcon/faq.png" />
         <span class="hover-icon">faq</span>
       </NuxtLink>
-      <NuxtLink class="page-icon" to="/staff">
-        <img src="~/assets/images/pageIcon/mail.png" />
-        <span class="hover-icon">staff</span>
-      </NuxtLink>
     </div>
   </div>
 </template>
