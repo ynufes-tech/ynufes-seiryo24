@@ -35,22 +35,22 @@ useHead({
         <TableOfContents
           :title="'EVENT'"
           :sub-title="'本部企画紹介'"
-          :page-link="'/event'"
+          :page-link="'/preparation'"
         />
         <TableOfContents
           :title="'EVENTS'"
           :sub-title="'企画団体一覧'"
-          :page-link="'/events'"
+          :page-link="'/preparation'"
         />
         <TableOfContents
           :title="'MAP&amp;PAMPHLET'"
           :sub-title="'大学祭のマップ&amp;パンフレット'"
-          :page-link="'/pamphlet'"
+          :page-link="'/preparation'"
         />
         <TableOfContents
           :title="'TIME-SCHEDULE'"
           :sub-title="'企画タイムスケジュール'"
-          :page-link="'/time-schedule'"
+          :page-link="'/preparation'"
         />
         <TableOfContents
           :title="'ACCESS'"
@@ -60,12 +60,12 @@ useHead({
         <TableOfContents
           :title="'SPONSORS'"
           :sub-title="'協賛企業一覧'"
-          :page-link="'/sponsors'"
+          :page-link="'/preparation'"
         />
         <TableOfContents
           :title="'FAQ'"
           :sub-title="'よくある質問'"
-          :page-link="'/faq'"
+          :page-link="'/preparation'"
         />
       </div>
     </div>
