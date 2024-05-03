@@ -56,9 +56,9 @@ const area_id = event?.area ?? 0;
       </div>
       <h1 class="org-name">{{ event?.org_name }}</h1>
       <!-- <p
-        class="place"
-        v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
-      /> -->
+                    class="place"
+                    v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
+                  /> -->
       <img :src="``" class="event-image" />
       <p class="section-title">・企画説明</p>
       <p class="event-description" v-text="event?.event_description" />
@@ -69,19 +69,19 @@ const area_id = event?.area ?? 0;
           class="activity-images"
         >
           <!-- <swiper
-            v-if="event?.activity_images > 1"
-            :autoplay="{
-              delay: 8000,
-              disableOnInteraction: false,
-            }"
-            :modules="[Pagination, Autoplay]"
-            :pagination="{
-              dynamicBullets: true,
-            }"
-            class="activity-images-swiper"
-          >
-            <swiper-slide v-for="url in urls"><img :src="url" /></swiper-slide>
-          </swiper> -->
+                                v-if="event?.activity_images > 1"
+                                :autoplay="{
+                                  delay: 8000,
+                                  disableOnInteraction: false,
+                                }"
+                                :modules="[Pagination, Autoplay]"
+                                :pagination="{
+                                  dynamicBullets: true,
+                                }"
+                                class="activity-images-swiper"
+                              >
+                                <swiper-slide v-for="url in urls"><img :src="url" /></swiper-slide>
+                              </swiper> -->
           <img
             v-if="event?.activity_images == 1"
             :src="urls[0]"
@@ -169,6 +169,7 @@ const area_id = event?.area ?? 0;
     top: 250px;
   }
 }
+
 .section-title {
   font-size: 32px;
   @include md {
@@ -232,6 +233,7 @@ const area_id = event?.area ?? 0;
     font-size: 8px;
   }
 }
+
 .section-sub-title {
   text-align: start;
   font-size: 28px;
@@ -250,6 +252,7 @@ const area_id = event?.area ?? 0;
   margin-top: 25px;
   display: flex;
   flex-direction: column;
+
   .group-image {
     width: 100%;
   }
@@ -283,6 +286,7 @@ const area_id = event?.area ?? 0;
 .swiper {
   max-width: 600px;
   aspect-ratio: 16 / 9;
+
   .swiper-slide {
     text-align: center;
     background: #fff;
