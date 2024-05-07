@@ -22,6 +22,9 @@
   position: relative;
   left: 20%;
   margin-top: 150px;
+  @include md {
+    margin-top: 0;
+  }
   a {
     img {
       object-fit: contain;
