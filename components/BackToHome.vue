@@ -2,23 +2,23 @@
 
 <template>
   <div class="back-to-home">
-    <NuxtLink to="/"> HOME </NuxtLink>
+    <NuxtLink to="/" class="button-script"> HOME </NuxtLink>
   </div>
 </template>
 
 <style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
+
 .back-to-home {
   text-align: center;
-  display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   position: relative;
   bottom: 20%;
-  > a {
-    font-size: 24px;
-    font-family: "Zen Old Mincho", serif;
+  .button-script {
+    font-size: 14px;
     text-decoration: none;
+    color: #333;
     padding: 0.3em 1.2em;
-    color: #333333;
     background-color: rgba(#f6f6f6, 0.8);
     border-radius: 10px;
   }
