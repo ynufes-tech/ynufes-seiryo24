@@ -89,6 +89,7 @@ useHead({
             <li>横浜銀行和田町支店</li>
           </ul>
         </div>
+        <p class="end-text">※五十音順、敬称略</p>
       </div>
     </div>
   </div>
@@ -156,6 +157,17 @@ useHead({
   }
   @include sm {
     font-size: 20px;
+  }
+}
+
+.end-text {
+  font-size: 28px;
+  text-align: right;
+  @include md {
+    font-size: 20px;
+  }
+  @include sm {
+    font-size: 12px;
   }
 }
 </style>
