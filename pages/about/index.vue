@@ -1,6 +1,5 @@
 <script lang="ts" setup></script>
 <template>
-
   <div class="page-root">
     <HeaderPageIcon />
     <div class="about-page">
