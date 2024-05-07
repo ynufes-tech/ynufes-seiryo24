@@ -26,6 +26,7 @@ useHead({
         <CountdownComponent />
         <HomeSNS />
       </div>
+      <SponsorBanner />
       <div class="table-units">
         <TableOfContents
           :title="'ABOUT'"
