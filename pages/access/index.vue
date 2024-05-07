@@ -7,7 +7,8 @@ useHead({
       content: "大学までのアクセスについてご案内しています。",
     },
   ],
-});</script>
+});
+</script>
 
 <template>
   <div class="access-page">

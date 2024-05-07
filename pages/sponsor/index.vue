@@ -4,7 +4,8 @@ useHead({
   meta: [
     { name: "description", content: "24清陵祭のご協賛団体、個人の一覧です" },
   ],
-});</script>
+});
+</script>
 <template>
   <div class="page-root">
     <div class="sponsors-title">
