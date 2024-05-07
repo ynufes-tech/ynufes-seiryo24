@@ -55,15 +55,15 @@ useHead({
             <li>春日井製菓株式会社</li>
             <li>株式会社ウイッシュボン</li>
             <li>株式会社ウエニ貿易</li>
-            <li>カラオケの鉄人</li>
+            <li>株式会社デルタインターナショナル</li>
             <li>株式会社ニュートン（パセラリゾーツ）</li>
             <li>株式会社ミツヱ</li>
             <li>鎌倉まめや</li>
+            <li>カラオケの鉄人</li>
             <li>記念艦「三笠」</li>
             <li>公益財団法人 戸栗美術館</li>
             <li>コヤマドライビングスクール横浜校</li>
             <li>シーラン株式会社</li>
-            <li>株式会社デルタインターナショナル</li>
             <li>箱根ガラスの森美術館</li>
             <li>宮田製菓株式会社</li>
             <li>明治神宮外苑 聖徳記念絵画館</li>
@@ -118,6 +118,7 @@ useHead({
   @include sm {
     top: 200px;
   }
+
   .text {
     font-size: 28px;
     @include md {
@@ -131,8 +132,10 @@ useHead({
 
 .sponsor-group {
   margin: 20px 0;
+
   > ul {
     list-style-type: none;
+
     > li {
       width: fit-content;
       font-size: 28px;
@@ -145,6 +148,7 @@ useHead({
     }
   }
 }
+
 .list-title {
   font-size: 36px;
   @include md {
