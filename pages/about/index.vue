@@ -1,4 +1,11 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+  title: "About | 24清陵祭公式HP~花瑞希~",
+  meta: [
+    { name: "description", content: "24清陵祭についての情報を掲載しています" },
+  ],
+});
+</script>
 <template>
   <div class="page-root">
     <div class="about-page">
