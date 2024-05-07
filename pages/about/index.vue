@@ -2,6 +2,7 @@
 
 <template>
   <div class="about-page">
+    <HeaderPageIcon />
     <PageTitle :title="'ABOUT'" :sub-title="'大学祭について'" />
     <div class="inner-about-page">
       <div class="tokiwa-about">
