@@ -1,6 +1,7 @@
 <script lang="ts" setup></script>
 <template>
   <div class="page-root">
+    <HeaderPageIcon />
     <div class="about-page">
       <PageTitle :title="'ABOUT'" :sub-title="'大学祭について'" />
       <div class="inner-about-page">
@@ -10,7 +11,6 @@
             清陵祭は横浜国立大学の年2回の大学祭のうち、春に開催される大学祭です。
           </p>
           <p>ぜひお気軽に足を運んでみてください！</p>
-
           <h1 class="child-title">・開催日時</h1>
           <p>1日目：5月18日(土) 13時〜20時</p>
           <p>2日目：5月19日(日) 9時〜15時</p>
@@ -41,9 +41,6 @@
 
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
-// html {
-//   scroll-behavior: smooth;
-// }
 
 .inner-about-page {
   position: relative;
