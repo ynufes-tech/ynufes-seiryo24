@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import BackToHome from "~/components/BackToHome.vue";
-import BreadCrumbsList from "~/components/BreadCrumbsList.vue";
 
 useHead({
   title: "清陵祭パンフレット | 24清陵祭公式HP~花瑞希~",
@@ -15,38 +14,43 @@ useHead({
 
 <template>
   <div class="page-root">
-    <PageTitle title="パンフレット" />
-    <BreadCrumbsList />
+    <PageTitle title="Pamphlet" sub-title="パンフレットページ" />
     <div class="content-root">
       <div class="inner-pamphlet">
         <div class="pamphlet-items">
-          <img
-            alt="pamphlet"
-            class="pamphlet-img"
-            src="/images/pamphlet-top.webp"
-          />
+          <div class="img-holder">
+            <img
+              alt="pamphlet"
+              class="pamphlet-img"
+              src="~./assets/images/pamphlet-top.webp"
+            />
+          </div>
           <div class="pamphlet-text">
-            <p>下のボタンからパンフレットをダウンロードできます</p>
+            <p>下のボタンのリンクからパンフレットをご覧ください。</p>
             <div class="pamphlet-download">
-              <p>軽量版（17.7MB）</p>
+              <p>圧縮版（9.8MB）</p>
               <a
                 class="pamphlet-button"
                 href="https://storage.googleapis.com/seiryo24-assets/seiryo24-pamphlet-light.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <DownloadButton />
+                <div class="button-contents">
+                  <div class="button-text">パンフレットを表示(pdf)</div>
+                </div>
               </a>
             </div>
             <div class="pamphlet-download">
-              <p>高画質版（28.4MB)</p>
+              <p>低圧縮版（71.9MB)</p>
               <a
                 class="pamphlet-button"
                 href="https://storage.googleapis.com/seiryo24-assets/seiryo24-pamphlet-high.pdf"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <DownloadButton />
+                <div class="button-contents">
+                  <div class="button-text">パンフレットを表示(pdf)</div>
+                </div>
               </a>
             </div>
           </div>
@@ -60,85 +64,103 @@ useHead({
 </template>
 
 <style lang="scss" scoped>
-.content-root {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1024px;
-  margin: 0 auto;
-}
+@use "@/assets/scss/_breakpoint.scss" as *;
+// html {
+//   scroll-behavior: smooth;
+// }
 
-.inner-pamphlet {
+.content-root {
+  position: relative;
+  top: 500px;
+  left: 20%;
+  width: 60%;
+  @include md {
+    top: 350px;
+  }
+  @include sm {
+    top: 250px;
+  }
+
   .pamphlet-items {
     display: flex;
-    width: 100%;
-    padding: 0 2em;
-    box-sizing: border-box;
-    margin-top: 2em;
+    flex-direction: row;
+    @media screen and (max-width: 1600px) {
+      flex-direction: column;
+    }
 
-    .pamphlet-img {
-      width: 40svw;
-      height: 31.46svw; /*縦横比固定*/
+    .img-holder {
+      width: 100%;
+      padding-right: 5%;
+      img {
+        width: 100%;
+      }
     }
 
     .pamphlet-text {
+      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-left: 10%;
-      width: 40svw;
-      margin-top: 2em;
+      text-align: center;
 
       .pamphlet-download {
-        margin-top: 3em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
         .pamphlet-button {
-          color: var(--thick-font-color);
           text-decoration: none;
-        }
+          display: flex;
+          justify-content: center;
+          margin-bottom: 2em;
 
-        > p {
-          margin-bottom: 1em;
+          .button-contents {
+            border-radius: 2em;
+            border: solid 1.5px #333333;
+            width: 15em;
+            height: 3em;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            background-color: white;
+            @include sm {
+              height: 2em;
+            }
+
+            &:hover {
+              background-color: #333333;
+              color: #fff;
+            }
+
+            .button-text {
+              padding-top: 1em;
+              transition: 0.5s;
+              text-decoration: none;
+              color: #333333;
+              font-weight: bold;
+              @include sm {
+                font-size: 12px;
+                padding-top: 0.5em;
+              }
+
+              &:active {
+                padding-top: 1.3em;
+              }
+
+              &:hover {
+                color: #fff;
+              }
+            }
+          }
         }
       }
     }
   }
-}
 
-.bottom-button {
-  margin-top: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  * p {
+    font-size: 32px;
+    margin-top: 0;
 
-@media screen and (max-width: 768px) {
-  .inner-pamphlet {
-    .pamphlet-items {
-      width: 100svw;
-      margin-left: 0;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .pamphlet-text {
-        margin-left: 0;
-        width: 100%;
-
-        .pamphlet-download {
-          margin-top: 1em;
-        }
-
-        > p {
-          text-align: center;
-          width: 80svw;
-          margin-left: 10svw;
-        }
-      }
+    @include md {
+      font-size: 20px;
+    }
+    @include sm {
+      font-size: 12px;
     }
   }
 }
