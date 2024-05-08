@@ -1,9 +1,12 @@
 <script lang="ts" setup>
-import { register } from "swiper/element/bundle";
+import { Swiper, SwiperSlide } from "swiper/vue";
 import type { Event } from "~/model/event";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+// eslint-disable-next-line import/order
+import { Autoplay, Pagination } from "swiper/modules";
 // import { Area } from "~/model/area";
-
-register();
 // Import Swiper styles
 
 const route = useRoute();
@@ -55,9 +58,9 @@ for (let i = 1; i <= event?.activity_images; i++) {
       </div>
       <h1 class="org-name">{{ event?.org_name }}</h1>
       <!-- <p
-                                                                    class="place"
-                                                                    v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
-                                                                  /> -->
+                                                                                                        class="place"
+                                                                                                        v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
+                                                                                                      /> -->
       <img
         :src="`https://storage.googleapis.com/seiryo24-assets/icons/${id}.webp`"
         class="event-image"
@@ -73,9 +76,10 @@ for (let i = 1; i <= event?.activity_images; i++) {
           <swiper
             v-if="event?.activity_images > 1"
             :autoplay="{
-              delay: 8000,
+              delay: 4000,
               disableOnInteraction: false,
             }"
+            :modules="[Pagination, Autoplay]"
             :pagination="{
               dynamicBullets: true,
             }"
