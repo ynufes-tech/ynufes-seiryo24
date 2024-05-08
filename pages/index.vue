@@ -65,7 +65,7 @@ useHead({
         <TableOfContents
           :title="'FAQ'"
           :sub-title="'よくある質問'"
-          :page-link="'/preparation'"
+          :page-link="'/faq'"
         />
       </div>
     </div>
