@@ -17,9 +17,9 @@ const event = await useFetch(`/api/event/${id}`)
     return res.data.value as Event;
   })
   .catch(() => null);
-if (!event) {
-  useRouter().push("/events");
-}
+// if (!event) {
+//   useRouter().push("/events");
+// }
 useHead({
   title: `${event?.event_name ?? ""} | 24清陵祭公式HP~花瑞希~`,
   meta: [
@@ -48,17 +48,20 @@ for (let i = 1; i <= event?.activity_images; i++) {
 <template>
   <div class="id-page">
     <HeaderPageIcon />
-    <PageTitle title="EVENTS" sub-title="events?.event_name ??''" />
+    <PageTitle title="EVENTS" :sub-title="event?.event_name ?? ''" />
     <div class="inner-id-page">
       <div class="event-tag">
         <EventTag :event-type="event?.event_genre ?? 0" class="EventTag" />
       </div>
       <h1 class="org-name">{{ event?.org_name }}</h1>
       <!-- <p
-                                            class="place"
-                                            v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
-                                          /> -->
-      <img :src="``" class="event-image" />
+                                                                    class="place"
+                                                                    v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
+                                                                  /> -->
+      <img
+        :src="`https://storage.googleapis.com/seiryo24-assets/icons/${id}.webp`"
+        class="event-image"
+      />
       <p class="section-title">・企画説明</p>
       <p class="event-description" v-text="event?.event_description" />
       <div v-if="event?.org_description" class="org-description-sec">
@@ -78,7 +81,10 @@ for (let i = 1; i <= event?.activity_images; i++) {
             }"
             class="activity-images-swiper"
           >
-            <swiper-slide v-for="url in urls"><img :src="url" /></swiper-slide>
+            <swiper-slide v-for="url in urls"
+              ><img
+                :src="`https://storage.googleapis.com/seiryo24-assets/icons/${url}.webp`"
+            /></swiper-slide>
           </swiper>
           <img
             v-if="event?.activity_images == 1"

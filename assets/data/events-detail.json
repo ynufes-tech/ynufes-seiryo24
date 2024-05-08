@@ -9,10 +9,10 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 2,
+    "area": 2,
     "place_name": "203",
     "website": "https://ynu-fes.yokohama",
-    "activity_images": 0
+    "activity_images": 2
   },
   {
     "id": 901,
@@ -24,7 +24,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -39,7 +39,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -54,7 +54,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -69,7 +69,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -84,7 +84,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -99,7 +99,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -114,7 +114,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -129,7 +129,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -144,7 +144,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -159,7 +159,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -174,7 +174,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -189,7 +189,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -204,7 +204,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -219,7 +219,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -234,7 +234,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -249,7 +249,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -264,7 +264,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -279,7 +279,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -294,7 +294,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -309,7 +309,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -324,7 +324,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -339,7 +339,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2
@@ -354,7 +354,7 @@
     "x_id": "ynufes",
     "instagram_id": "",
     "facebook_id": "",
-    "place_id": 1,
+    "area": 1,
     "place_name": "103",
     "website": "https://ynu-fes.yokohama",
     "activity_images": 2

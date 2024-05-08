@@ -5,7 +5,7 @@ export interface Event {
   id: number;
   event_name: string;
   event_genre: Genre;
-  event_description: number;
+  event_description: string;
   org_name: string;
   org_description: string;
   x_id: string;
