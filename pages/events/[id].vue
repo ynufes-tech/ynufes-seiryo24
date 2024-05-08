@@ -1,11 +1,10 @@
 <script lang="ts" setup>
-import { Swiper, SwiperSlide } from "swiper/vue"; // 以下swiperの設定
+import { register } from "swiper/element/bundle";
 import type { Event } from "~/model/event";
-import { Area } from "~/model/area";
-// Import Swiper styles
-import "swiper/css";
+// import { Area } from "~/model/area";
 
-import "swiper/css/pagination";
+register();
+// Import Swiper styles
 
 const route = useRoute();
 const id = route.params.id; // idが数値でない場合はトップページにリダイレクト
@@ -36,7 +35,7 @@ const urls: string[] = []; // swiperの複数の画像のURLを格納する配�
 for (let i = 1; i <= event?.activity_images; i++) {
   urls.push("" + event?.id + "-" + i);
 }
-const area_id = event?.area ?? 0;
+// const area_id = event?.area ?? 0;
 
 // const { gtag } = useGtag();
 // gtag("event", "screen_view", {
@@ -56,9 +55,9 @@ const area_id = event?.area ?? 0;
       </div>
       <h1 class="org-name">{{ event?.org_name }}</h1>
       <!-- <p
-                          class="place"
-                          v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
-                        /> -->
+                                            class="place"
+                                            v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
+                                          /> -->
       <img :src="``" class="event-image" />
       <p class="section-title">・企画説明</p>
       <p class="event-description" v-text="event?.event_description" />
@@ -68,20 +67,19 @@ const area_id = event?.area ?? 0;
           v-if="event?.activity_images && event?.activity_images > 0"
           class="activity-images"
         >
-          <!-- <swiper
-                                          v-if="event?.activity_images > 1"
-                                          :autoplay="{
-                                            delay: 8000,
-                                            disableOnInteraction: false,
-                                          }"
-                                          :modules="[Pagination, Autoplay]"
-                                          :pagination="{
-                                            dynamicBullets: true,
-                                          }"
-                                          class="activity-images-swiper"
-                                        >
-                                          <swiper-slide v-for="url in urls"><img :src="url" /></swiper-slide>
-                                        </swiper> -->
+          <swiper
+            v-if="event?.activity_images > 1"
+            :autoplay="{
+              delay: 8000,
+              disableOnInteraction: false,
+            }"
+            :pagination="{
+              dynamicBullets: true,
+            }"
+            class="activity-images-swiper"
+          >
+            <swiper-slide v-for="url in urls"><img :src="url" /></swiper-slide>
+          </swiper>
           <img
             v-if="event?.activity_images == 1"
             :src="urls[0]"
