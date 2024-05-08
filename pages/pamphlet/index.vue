@@ -14,6 +14,7 @@ useHead({
 
 <template>
   <div class="page-root">
+    <HeaderPageIcon />
     <PageTitle title="Pamphlet" sub-title="パンフレットページ" />
     <div class="content-root">
       <div class="inner-pamphlet">
@@ -91,6 +92,7 @@ useHead({
     .img-holder {
       width: 100%;
       padding-right: 5%;
+
       img {
         width: 100%;
       }
