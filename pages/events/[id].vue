@@ -85,7 +85,7 @@ for (let i = 1; i <= event?.activity_images; i++) {
             }"
             class="activity-images-swiper"
           >
-            <swiper-slide v-for="url in urls"
+            <swiper-slide v-for="(url, index) in urls" :key="index"
               ><img
                 :src="`https://storage.googleapis.com/seiryo24-assets/icons/${url}.webp`"
             /></swiper-slide>
