@@ -13,7 +13,7 @@
           <div class="answer-wrapper">
             <p class="answer-number">A.</p>
             <p class="answer-content">
-              お近くのＳＴＡＦＦジャンパーを着た大学祭実⾏委員にお声がけいただくか、本部(経営学部1号館108教室)まお越しください。場所はキャンパスマップ(p.3-4)をご参照ください。
+              お近くのＳＴＡＦＦジャンパーを着た大学祭実⾏委員にお声がけいただくか、本部(経営学部1号館108教室)まお越しください。場所はキャンパスマップ(パンフレットp.3-4)をご参照ください。
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@
           <div class="answer-wrapper">
             <p class="answer-number">A.</p>
             <p class="answer-content">
-              企画場所が変更または中⽌となる場合がございます。詳しくはタイムテーブル(p.7-8)、イベント＆ステージ(p.9-10)をご確認ください。
+              企画場所が変更または中⽌となる場合がございます。詳しくはタイムテーブル(パンフレットp.7-8)、イベント＆ステージ(パンフレットp.9-10)をご確認ください。
             </p>
           </div>
         </div>
@@ -48,7 +48,9 @@
           </div>
           <div class="answer-wrapper">
             <p class="answer-number">A.</p>
-            <p class="answer-content">アクセスマップ(p.29)をご参照ください。</p>
+            <p class="answer-content">
+              アクセスマップ(パンフレットp.29)をご参照ください。
+            </p>
           </div>
         </div>
         <div class="section-wrapper">
@@ -71,7 +73,7 @@
           <div class="answer-wrapper">
             <p class="answer-number">A.</p>
             <p class="answer-content">
-              大学祭実⾏委員の指⺬に従い、お近くの避難場所へ避難してください。避難場所は理⼯学系研究図書館付近、野外⾳楽堂、都市科学部棟裏です。場所はキャンパスマップ(p.3-4)をご参照ください。
+              大学祭実⾏委員の指⺬に従い、お近くの避難場所へ避難してください。避難場所は理⼯学系研究図書館付近、野外⾳楽堂、都市科学部棟裏です。場所はキャンパスマップ(パンフレットp.3-4)をご参照ください。
             </p>
           </div>
         </div>
@@ -99,6 +101,7 @@
     top: 250px;
   }
 }
+
 .section-wrapper {
   display: flex;
   flex-direction: column;
@@ -110,6 +113,7 @@
     margin-top: 30px;
   }
 }
+
 .question-wrapper,
 .answer-wrapper {
   display: flex;
@@ -123,6 +127,7 @@
     margin-bottom: 10px;
   }
 }
+
 .question-number,
 .answer-number {
   margin: 0 40px;
@@ -132,13 +137,15 @@
     margin: 0 0;
   }
 }
+
 .question-content,
 .answer-content {
   height: fit-content;
   width: fit-content;
   margin: 0 0;
 }
-*p {
+
+* p {
   font-size: 28px;
   @include md {
     font-size: 20px;
