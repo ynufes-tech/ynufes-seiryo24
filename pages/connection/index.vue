@@ -10,7 +10,7 @@
         </div>
         <div class="connection-list">
           <h1 class="child-title">調布祭</h1>
-          <p>電気通信大学　調布祭実行委員会</p>
+          <p>電気通信大学調布祭実行委員会</p>
           <p>開催日：11月22日（金）〜24日（日）</p>
           <a href="https://www.chofusai.jp/"
             >ホームページURL：https://www.chofusai.jp/</a
@@ -71,6 +71,7 @@
     font-size: 12px;
   }
 }
+
 * a {
   font-size: 24px;
 
