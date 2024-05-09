@@ -2,25 +2,42 @@
 
 <template>
   <div class="sponsor-banner">
-    <a href="" target="_blank">
-      <img alt="" src="https://placehold.jp/250x60.png" />
+    <a>
+      <img alt="ネクストギアーズ" src="~/assets/images/シーバー.jpg" />
     </a>
-    <a href="" target="_blank">
-      <img alt="" src="https://placehold.jp/250x60.png" />
+    <a>
+      <img alt="くぼた眼科" src="~/assets/images/眼科.png" />
     </a>
   </div>
 </template>
 
 <style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
+
 .sponsor-banner {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 70%;
+  width: 60%;
+  position: relative;
+  left: 20%;
+  margin-top: 150px;
+  @include md {
+    margin-top: 0;
+  }
   a {
-    margin: 15px 25px;
     img {
       object-fit: contain;
+      width: 220px;
+      height: 60px;
+      @include md {
+        width: 140px;
+        height: 45px;
+      }
+      @include sm {
+        widows: 100px;
+        height: 30px;
+      }
     }
   }
 }
