@@ -68,6 +68,11 @@ useHead({
           :sub-title="'よくある質問'"
           :page-link="'/faq'"
         />
+        <TableOfContents
+          :title="'CONNECTION'"
+          :sub-title="'他大学の大学祭情報'"
+          :page-link="'/connection'"
+        />
       </div>
     </div>
   </div>
