@@ -1,4 +1,11 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+  title: "Sponsor | 24清陵祭公式HP~花瑞希~",
+  meta: [
+    { name: "description", content: "24清陵祭のご協賛団体、個人の一覧です" },
+  ],
+});
+</script>
 <template>
   <div class="page-root">
     <div class="sponsors-title">

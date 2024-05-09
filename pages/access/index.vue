@@ -1,4 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+  title: "Access | 24清陵祭公式HP~花瑞希~",
+  meta: [
+    {
+      name: "description",
+      content: "大学までのアクセスについてご案内しています。",
+    },
+  ],
+});
+</script>
 
 <template>
   <div class="access-page">
