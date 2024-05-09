@@ -59,9 +59,9 @@ for (let i = 1; i <= event?.activity_images; i++) {
       </div>
       <h1 class="org-name">{{ event?.org_name }}</h1>
       <!-- <p
-                                                                                                        class="place"
-                                                                                                        v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
-                                                                                                      /> -->
+                                                                                                              class="place"
+                                                                                                              v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
+                                                                                                            /> -->
       <img
         :src="`https://storage.googleapis.com/seiryo24-assets/icons/${id}.webp`"
         class="event-image"
@@ -70,36 +70,38 @@ for (let i = 1; i <= event?.activity_images; i++) {
       <p class="event-description" v-text="event?.event_description" />
       <div v-if="event?.org_description" class="org-description-sec">
         <p class="section-title">・企画団体説明</p>
-        <div
-          v-if="event?.activity_images && event?.activity_images > 0"
-          class="activity-images"
-        >
-          <swiper
-            v-if="event?.activity_images > 1"
-            :autoplay="{
-              delay: 4000,
-              disableOnInteraction: false,
-            }"
-            :modules="[Pagination, Autoplay]"
-            :pagination="{
-              dynamicBullets: true,
-            }"
-            class="activity-images-swiper"
+        <div class="swiper-holder">
+          <div
+            v-if="event?.activity_images && event?.activity_images > 0"
+            class="activity-images"
           >
-            <swiper-slide
-              v-for="(url, index) in urls"
-              :key="index"
-              class="swiper-slide"
-              ><img
-                :src="`https://storage.googleapis.com/seiryo24-assets/icons/${url}.webp`"
-            /></swiper-slide>
-          </swiper>
-          <img
-            v-if="event?.activity_images == 1"
-            :src="urls[0]"
-            alt=""
-            class="group-image"
-          />
+            <swiper
+              v-if="event?.activity_images > 1"
+              :autoplay="{
+                delay: 4000,
+                disableOnInteraction: false,
+              }"
+              :modules="[Pagination, Autoplay]"
+              :pagination="{
+                dynamicBullets: true,
+              }"
+              class="activity-images-swiper"
+            >
+              <swiper-slide
+                v-for="(url, index) in urls"
+                :key="index"
+                class="swiper-slide"
+                ><img
+                  :src="`https://storage.googleapis.com/seiryo24-assets/icons/${url}.webp`"
+              /></swiper-slide>
+            </swiper>
+            <img
+              v-if="event?.activity_images == 1"
+              :src="urls[0]"
+              alt=""
+              class="group-image"
+            />
+          </div>
         </div>
         <p class="section-sub-title">・企画団体名</p>
         <h1 class="org-name">{{ event?.org_name }}</h1>
@@ -250,11 +252,12 @@ for (let i = 1; i <= event?.activity_images; i++) {
     font-size: 8px;
   }
 }
+
 .org-description-sec {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
+
 .section-sub-title {
   text-align: start;
   font-size: 28px;
@@ -333,10 +336,16 @@ for (let i = 1; i <= event?.activity_images; i++) {
     }
   }
 }
+
 swiper-wraper {
   width: min(600px, 80svw);
 }
+
 .back-button {
   margin-top: 50px;
+}
+.swiper-holder {
+  display: flex;
+  justify-content: center;
 }
 </style>
