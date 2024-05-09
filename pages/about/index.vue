@@ -41,6 +41,7 @@ useHead({
             実行委員会では、より良い大学祭を共に築き上げていくパートナーとして、ご協賛いただける企業様を募集しております。
           </p>
         </div>
+        <BackToHome />
       </div>
     </div>
   </div>
@@ -61,6 +62,7 @@ useHead({
     top: 250px;
   }
 }
+
 .child-title {
   font-size: 40px;
   @include md {
@@ -70,7 +72,8 @@ useHead({
     font-size: 16px;
   }
 }
-*p {
+
+* p {
   font-size: 32px;
 
   @include md {

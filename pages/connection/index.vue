@@ -16,6 +16,7 @@
             >ホームページURL：https://www.chofusai.jp/</a
           >
         </div>
+        <BackToHome />
       </div>
     </div>
   </div>
