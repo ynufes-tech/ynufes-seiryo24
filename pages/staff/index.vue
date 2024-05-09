@@ -3,6 +3,7 @@
   <div class="page-root">
     <div class="staff-page">
       <PageTitle :title="'STAFF'" :sub-title="'お問い合わせ'" />
+      <HeaderPageIcon />
       <div class="inner-staff-page">
         <div class="staff-about">
           <p>当ホームページに興味を持っていただきありがとうございます。</p>
@@ -16,6 +17,7 @@
           </p>
           <p>お問い合わせ内容を確認後、担当者より連絡させていただきます。</p>
         </div>
+        <BackToHome />
       </div>
     </div>
   </div>
@@ -36,6 +38,7 @@
     top: 250px;
   }
 }
+
 .child-title {
   font-size: 24px;
   width: fit-content;
@@ -47,6 +50,7 @@
     font-size: 12px;
   }
 }
+
 .mail-announce {
   background-color: rgba(#f6f6f6, 0.6);
   border-radius: 20px;
@@ -58,7 +62,8 @@
     padding: 15px 20px;
   }
 }
-*p {
+
+* p {
   font-size: 24px;
 
   @include md {

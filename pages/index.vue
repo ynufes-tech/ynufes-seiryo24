@@ -69,6 +69,11 @@ useHead({
           :page-link="'/faq'"
         />
         <TableOfContents
+          :title="'STAFF'"
+          :sub-title="'お問い合わせ'"
+          :page-link="'/staff'"
+        />
+        <TableOfContents
           :title="'CONNECTION'"
           :sub-title="'他大学の大学祭情報'"
           :page-link="'/connection'"
@@ -96,6 +101,7 @@ useHead({
   margin: 0;
   margin-top: min(10rem, 20vw);
 }
+
 .date {
   font-size: min(2.25em, 4.5vw);
   box-sizing: border-box;
@@ -108,11 +114,13 @@ useHead({
   line-height: 0.45em;
   transform: translateX(20%);
 }
+
 .arrow1 {
   width: 2.8em;
   padding: 0;
   margin: 0 0.3em 0.1em 0.25em;
 }
+
 .circle-units {
   display: flex;
   margin-top: 4rem;
@@ -124,6 +132,7 @@ useHead({
     height: auto;
   }
 }
+
 .countdown-wrapper {
   transform: translateY(30%);
   @include lg {
@@ -133,6 +142,7 @@ useHead({
     transform: translateY(5%);
   }
 }
+
 .sns-area {
   object-fit: cover;
   margin-left: 5rem;
@@ -144,6 +154,7 @@ useHead({
     }
   }
 }
+
 .table-units {
   margin: 0 15vw;
 }
