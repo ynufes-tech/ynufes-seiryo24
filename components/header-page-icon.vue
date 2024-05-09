@@ -15,7 +15,7 @@
         <img src="~/assets/images/pageIcon/events.png" />
         <span class="hover-icon">events</span>
       </NuxtLink>
-      <NuxtLink class="page-icon" to="/preparation">
+      <NuxtLink class="page-icon" to="/pamphlet">
         <img src="~/assets/images/pageIcon/pamphlet.png" />
         <span class="hover-icon">pamphlet</span>
       </NuxtLink>

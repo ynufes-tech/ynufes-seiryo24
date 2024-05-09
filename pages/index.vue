@@ -43,9 +43,9 @@ useHead({
           :page-link="'/preparation'"
         />
         <TableOfContents
-          :title="'MAP&amp;PAMPHLET'"
-          :sub-title="'大学祭のマップ&amp;パンフレット'"
-          :page-link="'/preparation'"
+          :title="'PAMPHLET'"
+          :sub-title="'大学祭のパンフレット'"
+          :page-link="'/pamphlet'"
         />
         <TableOfContents
           :title="'TIME-SCHEDULE'"
