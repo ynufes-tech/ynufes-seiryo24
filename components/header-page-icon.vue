@@ -31,7 +31,7 @@
         <img src="~/assets/images/pageIcon/sponsors.png" />
         <span class="hover-icon">sponsors</span>
       </NuxtLink>
-      <NuxtLink class="page-icon" to="/preparation">
+      <NuxtLink class="page-icon" to="/faq">
         <img src="~/assets/images/pageIcon/faq.png" />
         <span class="hover-icon">faq</span>
       </NuxtLink>
