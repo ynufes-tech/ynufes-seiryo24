@@ -3,17 +3,17 @@ const props = defineProps<{
   eventData: {
     id: number;
     e_name: string;
-    e_genre: Genre;
+    // e_genre: Genre;
     o_name: string;
-    area: Area;
-    p_name: string;
+    // area: Area;
+    // p_name: string;
   };
 }>();
 const showNoImage = function (e: any) {
-  e.target.src = "";
+  e.target.src = "./assts/images/noimage.webp";
   e.target.onerror = null;
 };
-const iconURL = ``;
+const iconURL = `https://storage.googleapis.com/seiryo24-assets/icons/${props.eventData.id}.webp`;
 </script>
 
 <template>
@@ -30,12 +30,12 @@ const iconURL = ``;
       <div class="card-script">
         <p class="event-name">{{ props.eventData.e_name }}</p>
         <p>{{ props.eventData.o_name }}</p>
-        <p>
-          {{ genreToString(props.eventData.e_genre) }}
-        </p>
-        <p>
-          {{ placeToString(props.eventData.area) + props.eventData.p_name }}
-        </p>
+        <!--        <p>-->
+        <!--          {{ genreToString(props.eventData.e_genre) }}-->
+        <!--        </p>-->
+        <!--        <p>-->
+        <!--          {{ placeToString(props.eventData.area) + props.eventData.p_name }}-->
+        <!--        </p>-->
       </div>
     </div>
   </div>
@@ -107,6 +107,16 @@ const iconURL = ``;
     @include md {
       font-size: 12px;
     }
+  }
+}
+.project-icon {
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px;
+  @include md {
+    width: 90px;
+    height: 75px;
   }
 }
 </style>

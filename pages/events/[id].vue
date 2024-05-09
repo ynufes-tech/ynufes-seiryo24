@@ -6,6 +6,7 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 // eslint-disable-next-line import/order
 import { Autoplay, Pagination } from "swiper/modules";
+import BackToEvents from "~/components/BackToEvents.vue";
 // import { Area } from "~/model/area";
 // Import Swiper styles
 
@@ -156,7 +157,8 @@ for (let i = 1; i <= event?.activity_images; i++) {
           {{ event?.website }}
         </a>
       </div>
-      <BackToHome />
+      <BackToEvents class="back-button" />
+      <BackToHome class="back-button" />
     </div>
   </div>
 </template>
@@ -333,5 +335,8 @@ for (let i = 1; i <= event?.activity_images; i++) {
 }
 swiper-wraper {
   width: min(600px, 80svw);
+}
+.back-button {
+  margin-top: 50px;
 }
 </style>
