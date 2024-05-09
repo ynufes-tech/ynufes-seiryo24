@@ -85,7 +85,10 @@ for (let i = 1; i <= event?.activity_images; i++) {
             }"
             class="activity-images-swiper"
           >
-            <swiper-slide v-for="(url, index) in urls" :key="index"
+            <swiper-slide
+              v-for="(url, index) in urls"
+              :key="index"
+              class="swiper-slide"
               ><img
                 :src="`https://storage.googleapis.com/seiryo24-assets/icons/${url}.webp`"
             /></swiper-slide>
@@ -100,7 +103,10 @@ for (let i = 1; i <= event?.activity_images; i++) {
         <p class="section-sub-title">・企画団体名</p>
         <h1 class="org-name">{{ event?.org_name }}</h1>
         <p class="org-description" v-text="event?.org_description" />
-        <p v-if="event?.x_id || event?.instagram_id || event?.facebook_id">
+        <p
+          v-if="event?.x_id || event?.instagram_id || event?.facebook_id"
+          class="section-sub-title"
+        >
           ・各種リンク
         </p>
         <div class="link-icons">
@@ -150,6 +156,7 @@ for (let i = 1; i <= event?.activity_images; i++) {
           {{ event?.website }}
         </a>
       </div>
+      <BackToHome />
     </div>
   </div>
 </template>
@@ -241,7 +248,11 @@ for (let i = 1; i <= event?.activity_images; i++) {
     font-size: 8px;
   }
 }
-
+.org-description-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .section-sub-title {
   text-align: start;
   font-size: 28px;
@@ -254,15 +265,20 @@ for (let i = 1; i <= event?.activity_images; i++) {
 }
 
 .activity-images {
-  max-width: 600px;
-  margin: 0 auto;
+  width: min(600px, 80svw);
   aspect-ratio: 16 / 9;
   margin-top: 25px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 768px) {
+    width: 50svw;
+  }
 
   .group-image {
     width: 100%;
+    @media screen and (max-width: 768px) {
+      width: 50svw;
+    }
   }
 }
 
@@ -294,6 +310,9 @@ for (let i = 1; i <= event?.activity_images; i++) {
 .swiper {
   max-width: 600px;
   aspect-ratio: 16 / 9;
+  @media screen and (max-width: 768px) {
+    width: 50svw;
+  }
 
   .swiper-slide {
     text-align: center;
@@ -303,7 +322,7 @@ for (let i = 1; i <= event?.activity_images; i++) {
     justify-content: center;
     align-items: center;
     aspect-ratio: 16 / 9;
-    width: 100%;
+    width: min(600px, 80svw);
 
     img {
       width: 100%;
@@ -311,5 +330,8 @@ for (let i = 1; i <= event?.activity_images; i++) {
       aspect-ratio: 16 / 9;
     }
   }
+}
+swiper-wraper {
+  width: min(600px, 80svw);
 }
 </style>
