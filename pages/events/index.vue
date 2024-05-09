@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import events from "assets/data/events.json";
 useHead({
   title: "events | 24清陵祭公式HP~花瑞希~",
   meta: [
@@ -8,7 +9,6 @@ useHead({
     },
   ],
 });
-import events from "assets/data/events.json";
 </script>
 <template>
   <div class="page-root">
@@ -20,8 +20,8 @@ import events from "assets/data/events.json";
         <div class="events-list">
           <NuxtLink
             v-for="event in events"
-            :to="`/events/${event.id}`"
             :key="event.id"
+            :to="`/events/${event.id}`"
             class="events-elements"
           >
             <EventsComponent :event-data="event" />
