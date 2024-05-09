@@ -103,6 +103,7 @@
             class="even-item"
           />
         </div>
+        <BackToHome />
       </div>
     </div>
   </div>
@@ -134,6 +135,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
   .even-item {
     position: relative;
     left: 60%;
@@ -155,6 +157,7 @@
     @include sm {
     }
   }
+
   .even-item:nth-child(n + 2) {
     position: relative;
     left: 60%;
@@ -175,6 +178,7 @@
     @include sm {
     }
   }
+
   .odd-item:nth-child(n + 2) {
     position: relative;
     top: -160px;

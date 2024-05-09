@@ -91,6 +91,7 @@ useHead({
         </div>
         <p class="end-text">※五十音順、敬称略</p>
       </div>
+      <BackToHome />
     </div>
   </div>
 </template>

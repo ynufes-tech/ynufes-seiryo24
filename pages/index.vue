@@ -36,12 +36,12 @@ useHead({
         <TableOfContents
           :title="'EVENT'"
           :sub-title="'本部企画紹介'"
-          :page-link="'/preparation'"
+          :page-link="'/event'"
         />
         <TableOfContents
           :title="'EVENTS'"
           :sub-title="'企画団体一覧'"
-          :page-link="'/preparation'"
+          :page-link="'/events'"
         />
         <TableOfContents
           :title="'PAMPHLET'"
@@ -61,7 +61,7 @@ useHead({
         <TableOfContents
           :title="'SPONSORS'"
           :sub-title="'協賛企業一覧'"
-          :page-link="'/preparation'"
+          :page-link="'/sponsor'"
         />
         <TableOfContents
           :title="'FAQ'"

@@ -49,6 +49,7 @@ useHead({
         class="ynu-page-link"
         >三ツ沢上町駅からのルート</a
       >
+      <BackToHome />
     </div>
   </div>
 </template>
