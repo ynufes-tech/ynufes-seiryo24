@@ -33,12 +33,14 @@ export default defineNuxtConfig({
         display: "swap",
       },
     ],
-    [
-      "nuxt-gtag",
-      {
-        id: process.env.GOOGLE_ANALYTICS_ID,
-        initialConsent: process.env.IS_PRODUCTION,
-      },
-    ],
+    "nuxt-gtag",
   ],
+  gtag: {
+    // Your primary Google tag ID
+    id: "G-LX72K26JW9",
+    // Additional configuration for this tag ID
+    // config: {
+    //   page_title: "seiryo24",
+    // },
+  },
 });
