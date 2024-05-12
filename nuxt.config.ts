@@ -33,5 +33,12 @@ export default defineNuxtConfig({
         display: "swap",
       },
     ],
+    [
+      "nuxt-gtag",
+      {
+        id: process.env.GOOGLE_ANALYTICS_ID,
+        initialConsent: process.env.IS_PRODUCTION,
+      },
+    ],
   ],
 });
