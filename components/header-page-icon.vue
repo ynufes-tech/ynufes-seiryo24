@@ -7,15 +7,15 @@
         <img src="~/assets/images/pageIcon/about.png" />
         <span class="hover-icon">about</span>
       </NuxtLink>
-      <NuxtLink class="page-icon" to="/event">
+      <NuxtLink class="page-icon" to="/preparation">
         <img src="~/assets/images/pageIcon/event.png" />
         <span class="hover-icon">event</span>
       </NuxtLink>
-      <NuxtLink class="page-icon" to="/events">
+      <NuxtLink class="page-icon" to="/preparation">
         <img src="~/assets/images/pageIcon/events.png" />
         <span class="hover-icon">events</span>
       </NuxtLink>
-      <NuxtLink class="page-icon" to="/pamphlet">
+      <NuxtLink class="page-icon" to="/preparation">
         <img src="~/assets/images/pageIcon/pamphlet.png" />
         <span class="hover-icon">pamphlet</span>
       </NuxtLink>
@@ -27,11 +27,11 @@
         <img src="~/assets/images/pageIcon/access.png" />
         <span class="hover-icon">access</span>
       </NuxtLink>
-      <NuxtLink class="page-icon" to="/sponsor">
+      <NuxtLink class="page-icon" to="/preparation">
         <img src="~/assets/images/pageIcon/sponsors.png" />
         <span class="hover-icon">sponsors</span>
       </NuxtLink>
-      <NuxtLink class="page-icon" to="/faq">
+      <NuxtLink class="page-icon" to="/preparation">
         <img src="~/assets/images/pageIcon/faq.png" />
         <span class="hover-icon">faq</span>
       </NuxtLink>
