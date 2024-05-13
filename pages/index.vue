@@ -1,4 +1,7 @@
 <script setup lang="ts">
+definePageMeta({
+  layout: "home",
+});
 useHead({
   title: "Top | 24清陵祭公式HP~花瑞希~",
   meta: [
@@ -23,6 +26,7 @@ useHead({
         <CountdownComponent />
         <HomeSNS />
       </div>
+      <SponsorBanner />
       <div class="table-units">
         <TableOfContents
           :title="'ABOUT'"
@@ -40,9 +44,9 @@ useHead({
           :page-link="'/preparation'"
         />
         <TableOfContents
-          :title="'MAP&amp;PAMPHLET'"
-          :sub-title="'大学祭のマップ&amp;パンフレット'"
-          :page-link="'/preparation'"
+          :title="'PAMPHLET'"
+          :sub-title="'大学祭のパンフレット'"
+          :page-link="'/pamphlet'"
         />
         <TableOfContents
           :title="'TIME-SCHEDULE'"
@@ -57,12 +61,22 @@ useHead({
         <TableOfContents
           :title="'SPONSORS'"
           :sub-title="'協賛企業一覧'"
-          :page-link="'/preparation'"
+          :page-link="'/sponsor'"
         />
         <TableOfContents
           :title="'FAQ'"
           :sub-title="'よくある質問'"
           :page-link="'/preparation'"
+        />
+        <TableOfContents
+          :title="'STAFF'"
+          :sub-title="'お問い合わせ'"
+          :page-link="'/staff'"
+        />
+        <TableOfContents
+          :title="'CONNECTION'"
+          :sub-title="'他大学の大学祭情報'"
+          :page-link="'/connection'"
         />
       </div>
     </div>
@@ -87,6 +101,7 @@ useHead({
   margin: 0;
   margin-top: min(10rem, 20vw);
 }
+
 .date {
   font-size: min(2.25em, 4.5vw);
   box-sizing: border-box;
@@ -99,11 +114,13 @@ useHead({
   line-height: 0.45em;
   transform: translateX(20%);
 }
+
 .arrow1 {
   width: 2.8em;
   padding: 0;
   margin: 0 0.3em 0.1em 0.25em;
 }
+
 .circle-units {
   display: flex;
   margin-top: 4rem;
@@ -115,6 +132,7 @@ useHead({
     height: auto;
   }
 }
+
 .countdown-wrapper {
   transform: translateY(30%);
   @include lg {
@@ -124,6 +142,7 @@ useHead({
     transform: translateY(5%);
   }
 }
+
 .sns-area {
   object-fit: cover;
   margin-left: 5rem;
@@ -135,6 +154,7 @@ useHead({
     }
   }
 }
+
 .table-units {
   margin: 0 15vw;
 }

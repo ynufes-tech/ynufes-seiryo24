@@ -1,6 +1,14 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+useHead({
+  title: "About | 24清陵祭公式HP~花瑞希~",
+  meta: [
+    { name: "description", content: "24清陵祭についての情報を掲載しています" },
+  ],
+});
+</script>
 <template>
   <div class="page-root">
+    <HeaderPageIcon />
     <div class="about-page">
       <PageTitle :title="'ABOUT'" :sub-title="'大学祭について'" />
       <div class="inner-about-page">
@@ -10,7 +18,6 @@
             清陵祭は横浜国立大学の年2回の大学祭のうち、春に開催される大学祭です。
           </p>
           <p>ぜひお気軽に足を運んでみてください！</p>
-
           <h1 class="child-title">・開催日時</h1>
           <p>1日目：5月18日(土) 13時〜20時</p>
           <p>2日目：5月19日(日) 9時〜15時</p>
@@ -34,6 +41,7 @@
             実行委員会では、より良い大学祭を共に築き上げていくパートナーとして、ご協賛いただける企業様を募集しております。
           </p>
         </div>
+        <BackToHome />
       </div>
     </div>
   </div>
@@ -41,9 +49,6 @@
 
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
-// html {
-//   scroll-behavior: smooth;
-// }
 
 .inner-about-page {
   position: relative;
@@ -57,6 +62,7 @@
     top: 250px;
   }
 }
+
 .child-title {
   font-size: 40px;
   @include md {
@@ -66,7 +72,8 @@
     font-size: 16px;
   }
 }
-*p {
+
+* p {
   font-size: 32px;
 
   @include md {
