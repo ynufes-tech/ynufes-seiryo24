@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import { onMounted } from "vue";
-</script>
+<script setup lang="ts"></script>
 <template>
   <div class="layout-root">
     <header-component />
@@ -23,12 +21,9 @@ import { onMounted } from "vue";
   }
 }
 .background-container {
-  //   min-height: 100vh;
   overflow: hidden;
 
   width: 100vw;
-  //   height: 100vh;
-  // position: relative;
 }
 .background-img {
   background-image: url(~/assets/images/default-background-image.webp);
