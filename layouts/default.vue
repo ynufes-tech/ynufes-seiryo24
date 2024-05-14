@@ -37,6 +37,7 @@
   position: absolute;
   overflow: hidden;
   margin: 0;
+  background-repeat: repeat-y;
 }
 </style>
 <style lang="scss">
