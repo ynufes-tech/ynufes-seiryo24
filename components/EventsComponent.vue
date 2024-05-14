@@ -87,7 +87,7 @@ const iconURL = `https://storage.googleapis.com/seiryo24-assets/icons/${props.ev
   background-color: rgba(#f6f6f6, 0.8);
   @include md {
     width: 90px;
-    height: 75px;
+    height: 85px;
     padding: 2px 4px;
   }
 
