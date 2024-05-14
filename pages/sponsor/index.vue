@@ -91,6 +91,7 @@ useHead({
         </div>
         <p class="end-text">※五十音順、敬称略</p>
       </div>
+      <div class="blank"></div>
       <BackToHome />
     </div>
   </div>
@@ -104,7 +105,9 @@ useHead({
   display: flex;
   flex-direction: column;
 }
-
+.blank {
+  height: 40px;
+}
 .inner-sponsors-page {
   position: relative;
   top: 500px;
@@ -113,7 +116,7 @@ useHead({
   display: flex;
   flex-direction: column;
   height: fit-content;
-  padding-bottom: 20%;
+  // padding-bottom: 15%;
   @include md {
     top: 300px;
   }
