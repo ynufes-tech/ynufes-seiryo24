@@ -2,29 +2,35 @@
 <template>
   <div class="layout-root">
     <header-component />
-    <slot />
     <div class="background-container">
-      <div class="background-img"></div>
+      <div class="background-img" />
     </div>
+    <slot />
     <FloatingButton />
   </div>
 </template>
 <style scoped lang="scss">
+.header-component {
+  z-index: 10;
+}
+
 .layout-root {
   font-family: "Zen Old Mincho", sans-serif;
   color: #333333;
   position: relative;
   margin: 0;
   padding: 0;
+
   .navi-menu {
     text-align: right;
   }
 }
+
 .background-container {
   overflow: hidden;
-
   width: 100vw;
 }
+
 .background-img {
   background-image: url(~/assets/images/default-background-image.webp);
   background-size: cover;

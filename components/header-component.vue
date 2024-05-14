@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="header">
+  <div class="header-component">
     <div class="ynu-icon-wrapper">
       <NuxtLink class="header-icon" to="/">
         <img src="~/assets/images/YNUFES-icon.png" />
@@ -16,7 +16,7 @@
 
 <style lang="scss" scoped>
 @use "@/assets/scss/_breakpoint.scss" as *;
-.header {
+.header-component {
   display: flex;
 }
 .ynu-icon-wrapper {
