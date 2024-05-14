@@ -1,10 +1,4 @@
-<script setup lang="ts">
-import { onMounted } from "vue";
-
-onMounted(() => {
-  document.body.style.margin = "0";
-});
-</script>
+<script setup lang="ts"></script>
 <template>
   <div class="layout-root">
     <header-component />
@@ -27,12 +21,9 @@ onMounted(() => {
   }
 }
 .background-container {
-  //   min-height: 100vh;
   overflow: hidden;
 
   width: 100vw;
-  //   height: 100vh;
-  // position: relative;
 }
 .background-img {
   background-image: url(~/assets/images/default-background-image.webp);
@@ -45,5 +36,11 @@ onMounted(() => {
   position: absolute;
   overflow: hidden;
   margin: 0;
+}
+</style>
+<style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
 }
 </style>

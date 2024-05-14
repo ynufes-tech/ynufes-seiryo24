@@ -3,11 +3,9 @@
   <div class="layout-root">
     <header-component />
     <slot />
-    <img
-      id="background-img"
-      alt=""
-      src="~/assets/images/default-background-image.webp"
-    />
+    <div class="background-container">
+      <div class="background-img"></div>
+    </div>
     <FloatingButton />
   </div>
 </template>
@@ -18,25 +16,29 @@
   position: relative;
   margin: 0;
   padding: 0;
-  top: 0;
-  left: 0;
   .navi-menu {
     text-align: right;
   }
 }
+.background-container {
+  overflow: hidden;
 
-#background-img {
-  object-fit: cover;
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
-  z-index: -100;
+}
+.background-img {
+  background-image: url(~/assets/images/default-background-image.webp);
+  background-size: cover;
   top: 0;
-  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+  position: absolute;
   overflow: hidden;
   margin: 0;
 }
 </style>
-
 <style lang="scss">
 body {
   margin: 0;
