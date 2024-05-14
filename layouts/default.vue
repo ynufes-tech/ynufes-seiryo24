@@ -23,7 +23,7 @@
 .background-container {
   overflow: hidden;
 
-  width: 100vw;
+  width: 98vw;
   height: 100vh;
 }
 .background-img {
