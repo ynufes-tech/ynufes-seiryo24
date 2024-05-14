@@ -1,11 +1,14 @@
 <script lang="ts" setup>
 import events from "assets/data/events.json";
+definePageMeta({
+  layout: "event-layout",
+});
 useHead({
-  title: "events | 24清陵祭公式HP~花瑞希~",
+  title: "events | 24�?陵祭公式HP~花瑞希~",
   meta: [
     {
       name: "description",
-      content: "5/18,19に開催される24清陵祭の企画一覧です",
+      content: "5/18,19に開催され�?24�?陵祭の企画一覧で�?",
     },
   ],
 });
