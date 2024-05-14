@@ -4,11 +4,11 @@ definePageMeta({
   layout: "event-layout",
 });
 useHead({
-  title: "events | 24�?陵祭公式HP~花瑞希~",
+  title: "events | 24�?陵祭公式HP~花瑞希~",
   meta: [
     {
       name: "description",
-      content: "5/18,19に開催され�?24�?陵祭の企画一覧で�?",
+      content: "5/18,19に開催され�?24�?陵祭の企画一覧で�?",
     },
   ],
 });
