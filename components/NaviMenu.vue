@@ -50,6 +50,12 @@ const toggle = () => {
           <li>
             <NuxtLink to="/faq" @click="toggle">FAQ</NuxtLink>
           </li>
+          <li>
+            <NuxtLink to="/staff" @click="toggle">STAFF</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/connection" @click="toggle">CONNECTION</NuxtLink>
+          </li>
         </ul>
       </nav>
     </div>
