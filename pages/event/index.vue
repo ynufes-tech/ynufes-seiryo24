@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+definePageMeta({
+  layout: "event-layout",
+});
+</script>
 <template>
   <div class="page-root">
     <HeaderPageIcon />
