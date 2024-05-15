@@ -27,6 +27,9 @@ const toggle = () => {
             <NuxtLink to="/about" @click="toggle">ABOUT</NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/event" @click="toggle">EVENT</NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/events" @click="toggle">EVENTS</NuxtLink>
           </li>
 
@@ -59,9 +62,9 @@ const toggle = () => {
   position: relative;
   z-index: 10000;
   display: none;
-  @include md {
-    display: block;
-  }
+    @include md {
+      display: block;
+    }
 }
 
 #button-title {
@@ -101,7 +104,10 @@ const toggle = () => {
   transition: all 0.3s;
   border-radius: 5px;
   z-index: 10000;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  @include sm {
+    font-size: 1rem;
+    }
   font-weight: 400;
 }
 
