@@ -62,9 +62,9 @@ const toggle = () => {
   position: relative;
   z-index: 10000;
   display: none;
-    @include md {
-      display: block;
-    }
+  @include md {
+    display: block;
+  }
 }
 
 #button-title {
@@ -107,7 +107,7 @@ const toggle = () => {
   font-size: 1.2rem;
   @include sm {
     font-size: 1rem;
-    }
+  }
   font-weight: 400;
 }
 
