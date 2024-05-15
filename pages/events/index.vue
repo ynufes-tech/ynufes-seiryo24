@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import events from "assets/data/events.json";
+definePageMeta({
+  layout: "event-layout",
+});
 useHead({
   title: "events | 24清陵祭公式HP~花瑞希~",
   meta: [
