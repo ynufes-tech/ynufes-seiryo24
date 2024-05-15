@@ -2,6 +2,7 @@
 <template>
   <div class="layout-root">
     <header-component />
+    <NaviMenu />
     <div class="background-container">
       <div class="background-img" />
     </div>

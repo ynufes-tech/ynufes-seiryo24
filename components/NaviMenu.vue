@@ -15,7 +15,7 @@ const toggle = () => {
         'under-hover-button': showMenu,
       }"
       @click="toggle"
-      >mmmm
+      >mmmmm
     </a>
     <div v-show="showMenu">
       <nav class="nav-list-wrapper">
@@ -54,9 +54,14 @@ const toggle = () => {
 </template>
 
 <style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
 .navi-menu {
   position: relative;
   z-index: 10000;
+  display: none;
+  @include md {
+    display: block;
+  }
 }
 
 #button-title {
@@ -64,7 +69,7 @@ const toggle = () => {
   margin-right: 1rem;
   margin-top: 1rem;
   width: fit-content;
-  line-height: 2.8rem;
+  line-height: 3.6rem;
   background: url(~/assets/images/NaviMenu-OpenButton.webp) no-repeat;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
