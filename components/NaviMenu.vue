@@ -15,7 +15,7 @@ const toggle = () => {
         'under-hover-button': showMenu,
       }"
       @click="toggle"
-      >mmmm
+      >mmmmm
     </a>
     <div v-show="showMenu">
       <nav class="nav-list-wrapper">
@@ -27,25 +27,29 @@ const toggle = () => {
             <NuxtLink to="/about" @click="toggle">ABOUT</NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/event" @click="toggle">EVENT</NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/events" @click="toggle">EVENTS</NuxtLink>
           </li>
 
           <li>
-            <NuxtLink to="/pamphlet" @click="toggle">MAP&amp;PAMPHLET</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/time-schedule" @click="toggle"
-              >TIME-SCHEDULE</NuxtLink
-            >
+            <NuxtLink to="/pamphlet" @click="toggle">PAMPHLET</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/access" @click="toggle">ACCESS</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/sponsors" @click="toggle">SPONSORS </NuxtLink>
+            <NuxtLink to="/sponsor" @click="toggle">SPONSOR</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/faq" @click="toggle">FAQ</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/staff" @click="toggle">STAFF</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/connection" @click="toggle">CONNECTION</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -54,9 +58,14 @@ const toggle = () => {
 </template>
 
 <style lang="scss" scoped>
+@use "@/assets/scss/_breakpoint.scss" as *;
 .navi-menu {
   position: relative;
   z-index: 10000;
+  display: none;
+  @include md {
+    display: block;
+  }
 }
 
 #button-title {
@@ -64,7 +73,7 @@ const toggle = () => {
   margin-right: 1rem;
   margin-top: 1rem;
   width: fit-content;
-  line-height: 2.8rem;
+  line-height: 3.6rem;
   background: url(~/assets/images/NaviMenu-OpenButton.webp) no-repeat;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -96,7 +105,10 @@ const toggle = () => {
   transition: all 0.3s;
   border-radius: 5px;
   z-index: 10000;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  @include sm {
+    font-size: 1.3rem;
+  }
   font-weight: 400;
 }
 
