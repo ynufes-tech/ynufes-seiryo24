@@ -34,12 +34,7 @@ const toggle = () => {
           </li>
 
           <li>
-            <NuxtLink to="/pamphlet" @click="toggle">MAP&amp;PAMPHLET</NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/time-schedule" @click="toggle"
-              >TIME-SCHEDULE</NuxtLink
-            >
+            <NuxtLink to="/pamphlet" @click="toggle">PAMPHLET</NuxtLink>
           </li>
           <li>
             <NuxtLink to="/access" @click="toggle">ACCESS</NuxtLink>
@@ -110,9 +105,9 @@ const toggle = () => {
   transition: all 0.3s;
   border-radius: 5px;
   z-index: 10000;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   @include sm {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   font-weight: 400;
 }

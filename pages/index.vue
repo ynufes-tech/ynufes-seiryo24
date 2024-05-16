@@ -49,11 +49,6 @@ useHead({
           :page-link="'/pamphlet'"
         />
         <TableOfContents
-          :title="'TIME-SCHEDULE'"
-          :sub-title="'企画タイムスケジュール'"
-          :page-link="'/preparation'"
-        />
-        <TableOfContents
           :title="'ACCESS'"
           :sub-title="'大学までのアクセス'"
           :page-link="'/access'"
