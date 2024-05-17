@@ -63,7 +63,7 @@ for (let i = 1; i <= event?.activity_images; i++) {
                                                                                                               v-text="'企画場所: ' + placeToString(area_id) + event?.place_name ?? ''"
                                                                                                             /> -->
       <img
-        :src="`https://storage.googleapis.com/seiryo24-assets/icons/${id}.webp`"
+        :src="`https://storage.googleapis.com/seiryo24-assets/icons2/${id}.webp`"
         class="event-image"
       />
       <p class="section-title">・企画説明</p>
