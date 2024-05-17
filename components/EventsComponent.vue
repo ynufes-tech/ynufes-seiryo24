@@ -13,7 +13,7 @@ const showNoImage = function (e: any) {
   e.target.src = "./assts/images/noimage.webp";
   e.target.onerror = null;
 };
-const iconURL = `https://storage.googleapis.com/seiryo24-assets/icons/${props.eventData.id}.webp`;
+const iconURL = `https://storage.googleapis.com/seiryo24-assets/icons2/${props.eventData.id}.webp`;
 </script>
 
 <template>
