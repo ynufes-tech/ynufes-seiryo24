@@ -29,6 +29,11 @@ useHead({
       <SponsorBanner />
       <div class="table-units">
         <TableOfContents
+          :title="'ECO PROJECT'"
+          :sub-title="'エコ企画結果発表！！！'"
+          :page-link="'/special'"
+        />
+        <TableOfContents
           :title="'ABOUT'"
           :sub-title="'大学祭について'"
           :page-link="'/about'"
