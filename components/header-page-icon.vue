@@ -19,6 +19,10 @@
         <img src="~/assets/images/pageIcon/pamphlet.png" />
         <span class="hover-icon">pamphlet</span>
       </NuxtLink>
+      <!--      <NuxtLink class="page-icon" to="/preparation">-->
+      <!--        <img src="~/assets/images/pageIcon/time-schedule.png" />-->
+      <!--        <span class="hover-icon">time-schedule</span>-->
+      <!--      </NuxtLink>-->
       <NuxtLink class="page-icon" to="/access">
         <img src="~/assets/images/pageIcon/access.png" />
         <span class="hover-icon">access</span>
