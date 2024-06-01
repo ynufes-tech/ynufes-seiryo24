@@ -16,6 +16,13 @@
             >ホームページURL：https://www.chofusai.jp/</a
           >
         </div>
+        <div class="connection-list">
+          <h1 class="child-title">静大祭</h1>
+          <p>静岡大祭実行委員会</p>
+          <a href="http://shizudaisai.jp"
+            >ホームページURL：http//shizudaisai.jp</a
+          >
+        </div>
         <BackToHome />
       </div>
     </div>
