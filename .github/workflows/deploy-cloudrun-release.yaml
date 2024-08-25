@@ -1,7 +1,7 @@
 name: Deploy to Cloud Run (Release)
 on:
   release:
-    type:
+    types:
       - released
 jobs:
   build-and-deploy:
