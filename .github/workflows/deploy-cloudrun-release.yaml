@@ -1,8 +1,8 @@
 name: Deploy to Cloud Run (Release)
 on:
-  push:
-    branches:
-      - release
+  release:
+    type:
+      - released
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
