@@ -1,0 +1,32 @@
+name: Deploy to Cloudflare (Release)
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release Tag'
+        required: true
+        default: 'v0.0.0'
+concurrency:
+  group: cloudflare-worker-prod
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.tag || github.sha }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cloudflare Worker Deploy (Nuxt)
+        uses: ynufes-tech/reusable-actions/.github/actions/cf-worker-deploy@main
+        env:
+          NUXT_PUBLIC_BASE_URL: /24/seiryo/
+        with:
+          worker_name: seiryo24-release
+          wrangler_template: wrangler.template.toml
+          release_tag: ${{ env.RELEASE_TAG }}
+          cloudflare_api_token: ${{ secrets.CLOUDFLARE_API_TOKEN }}

@@ -2,6 +2,7 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.13.1",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,8 +11,8 @@
     "postinstall": "nuxt prepare",
     "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
-    "lint": "yarn lint:js && yarn lint:prettier",
-    "lintfix": "prettier --write --list-different . && yarn lint:js --fix"
+    "lint": "pnpm lint:js && pnpm lint:prettier",
+    "lintfix": "prettier --write --list-different . && pnpm lint:js --fix"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
