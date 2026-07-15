@@ -1,7 +1,7 @@
 name: Deploy to Cloudflare (Release)
 on:
-  release:
-    types: [released]
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       tag:
@@ -17,7 +17,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.tag || github.event.release.tag_name || github.sha }}
+      RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.tag || github.sha }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
