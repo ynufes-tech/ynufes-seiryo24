@@ -1,0 +1,26 @@
+name: Runtime security checks
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '39 0 * * 1'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Build production image
+        run: docker build --pull --platform linux/amd64 -f cloudrun/Dockerfile -t app-security-test .
+      - name: Scan production runtime
+        run: |
+          docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \
+            aquasec/trivy:0.71.1@sha256:53570e6911c2361ebe7995228088cf83a6b9b73e7f3cdca44bd8f8f425e80fa7 \
+            image --scanners vuln --exit-code 1 --severity MEDIUM,HIGH,CRITICAL app-security-test
+      - name: Check server startup
+        run: |
+          container=$(docker run -d -p 127.0.0.1:8080:8080 app-security-test)
+          trap 'docker logs "$container"; docker rm -f "$container"' EXIT
+          curl --fail --silent --show-error --retry 12 --retry-connrefused --retry-delay 2 http://127.0.0.1:8080/24/seiryo/ -o /dev/null

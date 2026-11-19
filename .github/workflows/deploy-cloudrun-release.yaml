@@ -43,6 +43,7 @@ jobs:
           curl "${{ secrets.EVENTS_SUMMARY_URL }}" -o ./assets/data/events.json
 
       - name: Build and push Docker image
+        id: build
         uses: docker/build-push-action@v5
         with:
           push: true
@@ -50,19 +51,19 @@ jobs:
           context: .
           file: ./cloudrun/Dockerfile
 
-      - name: Download Cloud Run Service YAML
+      - name: Reject vulnerable runtime images
+        env:
+          TRIVY_USERNAME: oauth2accesstoken
+          TRIVY_PASSWORD: ${{ steps.auth.outputs.access_token }}
+          IMAGE_REF: asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/release/seiryo24@${{ steps.build.outputs.digest }}
         run: |
-          gcloud run services describe hp-main --format yaml --region asia-northeast1 > ./cloudrun/service-hp-main.yaml
+          docker run --rm -e TRIVY_USERNAME -e TRIVY_PASSWORD \
+            aquasec/trivy:0.71.1@sha256:53570e6911c2361ebe7995228088cf83a6b9b73e7f3cdca44bd8f8f425e80fa7 \
+            image --image-src remote --scanners vuln --exit-code 1 --severity MEDIUM,HIGH,CRITICAL "$IMAGE_REF"
 
-      # replace github_sha field to latest commit sha. Changing spec.template is required to deploy new revision.
-      # reference: https://cloud.google.com/run/docs/deploying?hl=ja#revision -- check yaml tab.
-      - name: Change some property of service-hp-main.yaml
+      - name: Deploy verified image
+        env:
+          IMAGE_REF: asia-northeast1-docker.pkg.dev/ynufes-hp-cloudrun/release/seiryo24@${{ steps.build.outputs.digest }}
         run: |
-          sed -i "s/github_sha: .*/github_sha: ${{ github.sha }}/g" ./cloudrun/service-hp-main.yaml
-
-      - name: Deploy to Cloud Run
-        id: deploy
-        uses: google-github-actions/deploy-cloudrun@v2
-        with:
-          region: "asia-northeast1"
-          metadata: "./cloudrun/service-hp-main.yaml"
+          gcloud run services update hp-main --project=ynufes-hp-cloudrun --region=asia-northeast1 \
+            --container=seiryo24 --image="$IMAGE_REF" --quiet
