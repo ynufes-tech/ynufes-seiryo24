@@ -1,58 +1,434 @@
 [
   {
-    "id": 900,
-    "e_name": "狙いを定めて的あてチャレンジ！",
-    "e_genre": 1,
-    "o_name": "てらこやみなとみらい",
+    "id": 30,
+    "e_name": "BaySound Jazz Orchestra",
+    "e_genre": 7,
+    "o_name": "BaySound Jazz Orchestra A",
+    "area": 9,
+    "p_name": "102"
+  },
+  {
+    "id": 37,
+    "e_name": "モダンダンス部 清陵祭公演",
+    "e_genre": 8,
+    "o_name": "横浜国立大学モダンダンス部",
+    "area": 0,
+    "p_name": "場所"
+  },
+  {
+    "id": 58,
+    "e_name": "国大山荘",
+    "e_genre": 4,
+    "o_name": "YNUワンダーフォーゲル部",
     "area": 2,
+    "p_name": "2"
+  },
+  {
+    "id": 4,
+    "e_name": "岩手らばーず",
+    "e_genre": 5,
+    "o_name": "岩手らばーず",
+    "area": 2,
+    "p_name": "3"
+  },
+  {
+    "id": 8,
+    "e_name": "がや's kitchen",
+    "e_genre": 4,
+    "o_name": "がやっこ探検隊",
+    "area": 7,
+    "p_name": "4"
+  },
+  {
+    "id": 27,
+    "e_name": "Art shop Eyebrows",
+    "e_genre": 1,
+    "o_name": "美術部Eyebrows",
+    "area": 9,
+    "p_name": "105"
+  },
+  {
+    "id": 19,
+    "e_name": "Stairways清陵祭アカペラライブ",
+    "e_genre": 7,
+    "o_name": "Stairways",
+    "area": 11,
+    "p_name": "101"
+  },
+  {
+    "id": 17,
+    "e_name": "謎解きゲーム",
+    "e_genre": 1,
+    "o_name": "人狼ボドゲサークルルーガルー B",
+    "area": 10,
+    "p_name": "109"
+  },
+  {
+    "id": 46,
+    "e_name": "ポケラバーズの会",
+    "e_genre": 1,
+    "o_name": "横浜国立大学ポケモンサークル",
+    "area": 9,
     "p_name": "203"
   },
   {
-    "id": 901,
-    "e_name": "イベント名2",
-    "e_genre": 2,
-    "o_name": "企画団体名2",
-    "area": 3,
-    "p_name": "103"
+    "id": 23,
+    "e_name": "ナゾトキゲーム WHYNU",
+    "e_genre": 1,
+    "o_name": "謎解きサークルWHYNU",
+    "area": 10,
+    "p_name": "104"
   },
   {
-    "id": 902,
-    "e_name": "イベント名3",
-    "e_genre": 2,
-    "o_name": "企画団体名3",
+    "id": 44,
+    "e_name": "YNUSB",
+    "e_genre": 3,
+    "o_name": "横浜国立大学吹奏楽団 A",
+    "area": 1,
+    "p_name": "5"
+  },
+  {
+    "id": 59,
+    "e_name": "Alice's Strawberry Land",
+    "e_genre": 6,
+    "o_name": "YDK 横国ディズニーサークル",
+    "area": 3,
+    "p_name": "3"
+  },
+  {
+    "id": 18,
+    "e_name": "遊び場ルーガルー",
+    "e_genre": 1,
+    "o_name": "人狼ボドゲサークルルーガルー C",
     "area": 4,
+    "p_name": "3"
+  },
+  {
+    "id": 57,
+    "e_name": "ロバートジョンソン降霊会",
+    "e_genre": 7,
+    "o_name": "ロバートジョンソン研究会",
+    "area": 9,
+    "p_name": "201"
+  },
+  {
+    "id": 42,
+    "e_name": "横浜国立大学国際問題研究会",
+    "e_genre": 1,
+    "o_name": "横浜国立大学国際問題研究会",
+    "area": 0,
+    "p_name": "206"
+  },
+  {
+    "id": 43,
+    "e_name": "ど根性やきそば",
+    "e_genre": 3,
+    "o_name": "横浜国立大学混声合唱団",
+    "area": 2,
+    "p_name": "7"
+  },
+  {
+    "id": 55,
+    "e_name": "Ctrl-Crepe",
+    "e_genre": 6,
+    "o_name": "Lumos",
+    "area": 4,
+    "p_name": "2"
+  },
+  {
+    "id": 12,
+    "e_name": "Coconutsのフランクフルト",
+    "e_genre": 4,
+    "o_name": "Coconuts",
+    "area": 4,
+    "p_name": "6"
+  },
+  {
+    "id": 14,
+    "e_name": "じょるのドーナツ",
+    "e_genre": 2,
+    "o_name": "giorno",
+    "area": 2,
+    "p_name": "6"
+  },
+  {
+    "id": 5,
+    "e_name": "étoアイス",
+    "e_genre": 6,
+    "o_name": "étoile",
+    "area": 4,
+    "p_name": "7"
+  },
+  {
+    "id": 41,
+    "e_name": "推し色ドリンク販売",
+    "e_genre": 5,
+    "o_name": "横国げんしけん",
+    "area": 7,
+    "p_name": "1"
+  },
+  {
+    "id": 53,
+    "e_name": "R³ude A",
+    "e_genre": 8,
+    "o_name": "R³ude A",
+    "area": 0,
+    "p_name": "場所"
+  },
+  {
+    "id": 20,
+    "e_name": "伝説のチャリから",
+    "e_genre": 4,
+    "o_name": "チャーリーブラウン",
+    "area": 2,
+    "p_name": "1"
+  },
+  {
+    "id": 6,
+    "e_name": "おけら屋",
+    "e_genre": 4,
+    "o_name": "おけら屋",
+    "area": 2,
+    "p_name": "4"
+  },
+  {
+    "id": 48,
+    "e_name": "LuckyDipのドーナツ工場",
+    "e_genre": 4,
+    "o_name": "LuckyDip",
+    "area": 3,
+    "p_name": "1"
+  },
+  {
+    "id": 21,
+    "e_name": "てっけん！",
+    "e_genre": 1,
+    "o_name": "てっけん！",
+    "area": 0,
+    "p_name": "ロビー"
+  },
+  {
+    "id": 36,
+    "e_name": "みんけん団子",
+    "e_genre": 4,
+    "o_name": "みんけん(民謡研究会合唱団)",
+    "area": 1,
+    "p_name": "7"
+  },
+  {
+    "id": 11,
+    "e_name": "軽音楽部",
+    "e_genre": 7,
+    "o_name": "軽音楽部",
+    "area": 9,
+    "p_name": "101"
+  },
+  {
+    "id": 15,
+    "e_name": "羊頭狗肉",
+    "e_genre": 1,
+    "o_name": "人畜無蓋",
+    "area": 9,
+    "p_name": "202"
+  },
+  {
+    "id": 35,
+    "e_name": "漫画・イラスト研究部",
+    "e_genre": 1,
+    "o_name": "漫画・イラスト研究部",
+    "area": 0,
+    "p_name": "204"
+  },
+  {
+    "id": 2,
+    "e_name": "僕が見たかった星空",
+    "e_genre": 5,
+    "o_name": "あの日ノスタルジア",
+    "area": 4,
+    "p_name": "1"
+  },
+  {
+    "id": 7,
+    "e_name": "お笑いサークルわかばのライブ",
+    "e_genre": 7,
+    "o_name": "お笑いサークルわかば",
+    "area": 9,
     "p_name": "103"
   },
   {
-    "id": 901,
-    "e_name": "イベント名2",
-    "e_genre": 2,
-    "o_name": "企画団体名2",
-    "area": 3,
+    "id": 40,
+    "e_name": "横国クリエイター展",
+    "e_genre": 1,
+    "o_name": "横国クリエイター連合",
+    "area": 12,
     "p_name": "103"
   },
   {
-    "id": 901,
-    "e_name": "イベント名2",
-    "e_genre": 2,
-    "o_name": "企画団体名2",
-    "area": 3,
-    "p_name": "103"
+    "id": 16,
+    "e_name": "謎解き宝探し",
+    "e_genre": 1,
+    "o_name": "人狼ボドゲサークルルーガルー A",
+    "area": 11,
+    "p_name": "102"
   },
   {
-    "id": 901,
-    "e_name": "イベント名2",
-    "e_genre": 2,
-    "o_name": "企画団体名2",
-    "area": 3,
-    "p_name": "103"
+    "id": 32,
+    "e_name": "YFR",
+    "e_genre": 8,
+    "o_name": "放送研究会 B",
+    "area": 0,
+    "p_name": "場所"
   },
   {
-    "id": 901,
-    "e_name": "イベント名2",
-    "e_genre": 2,
-    "o_name": "企画団体名2",
+    "id": 39,
+    "e_name": "カラサードーナツ",
+    "e_genre": 6,
+    "o_name": "横国カラオケサークル",
+    "area": 4,
+    "p_name": "5"
+  },
+  {
+    "id": 33,
+    "e_name": "鹿肉の予算オーバーライス",
+    "e_genre": 3,
+    "o_name": "真鍋ゼミ15期",
+    "area": 7,
+    "p_name": "3"
+  },
+  {
+    "id": 47,
+    "e_name": "模擬雀荘",
+    "e_genre": 1,
+    "o_name": "横浜国立大学麻雀部",
+    "area": 9,
+    "p_name": "207"
+  },
+  {
+    "id": 26,
+    "e_name": "わくわく☆工房",
+    "e_genre": 1,
+    "o_name": "美術科企画",
+    "area": 10,
+    "p_name": "101"
+  },
+  {
+    "id": 22,
+    "e_name": "狙いを定めて的当てチャレンジ！",
+    "e_genre": 1,
+    "o_name": "てらこやみなとみらい",
+    "area": 10,
+    "p_name": "110"
+  },
+  {
+    "id": 38,
+    "e_name": "横国音楽研究会！！",
+    "e_genre": 1,
+    "o_name": "横国音楽研究会！！",
+    "area": 10,
+    "p_name": "204"
+  },
+  {
+    "id": 3,
+    "e_name": "Kフード",
+    "e_genre": 4,
+    "o_name": "ESS",
+    "area": 1,
+    "p_name": "4"
+  },
+  {
+    "id": 34,
+    "e_name": "M's Dog",
+    "e_genre": 3,
+    "o_name": "Mare Profondo",
     "area": 3,
-    "p_name": "103"
+    "p_name": "2"
+  },
+  {
+    "id": 52,
+    "e_name": "四川麻婆豆腐丼",
+    "e_genre": 3,
+    "o_name": "料理サークル",
+    "area": 1,
+    "p_name": "1"
+  },
+  {
+    "id": 13,
+    "e_name": "茶道研究会の本格抹茶ラテ",
+    "e_genre": 5,
+    "o_name": "茶道研究会",
+    "area": 4,
+    "p_name": "4"
+  },
+  {
+    "id": 1,
+    "e_name": "アコースティックライブ",
+    "e_genre": 7,
+    "o_name": "アコースティックスタイル",
+    "area": 9,
+    "p_name": "204"
+  },
+  {
+    "id": 45,
+    "e_name": "清陵祭コンサート",
+    "e_genre": 8,
+    "o_name": "横浜国立大学吹奏楽団 C",
+    "area": 0,
+    "p_name": "場所"
+  },
+  {
+    "id": 25,
+    "e_name": "ホットドック",
+    "e_genre": 3,
+    "o_name": "Peach Sherbet",
+    "area": 1,
+    "p_name": "2"
+  },
+  {
+    "id": 10,
+    "e_name": "フルーツ王国",
+    "e_genre": 2,
+    "o_name": "Cougars",
+    "area": 7,
+    "p_name": "2"
+  },
+  {
+    "id": 51,
+    "e_name": "Liz 2024",
+    "e_genre": 8,
+    "o_name": "Liz B",
+    "area": 0,
+    "p_name": "場所"
+  },
+  {
+    "id": 49,
+    "e_name": "らぽたこ",
+    "e_genre": 3,
+    "o_name": "LaPaume",
+    "area": 1,
+    "p_name": "6"
+  },
+  {
+    "id": 28,
+    "e_name": "ヨココク・レーシング",
+    "e_genre": 1,
+    "o_name": "フォーミュラプロジェクト",
+    "area": 3,
+    "p_name": "4"
+  },
+  {
+    "id": 56,
+    "e_name": "受胎告知 vol.1",
+    "e_genre": 7,
+    "o_name": "ロック研究会",
+    "area": 9,
+    "p_name": "205"
+  },
+  {
+    "id": 29,
+    "e_name": "Holicフリマ24SS",
+    "e_genre": 1,
+    "o_name": "古着Holic.",
+    "area": 12,
+    "p_name": "100"
   }
 ]
